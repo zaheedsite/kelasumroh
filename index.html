@@ -16,18 +16,7 @@
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            50: '#FFF9E6',
-                            100: '#FFF0B3',
-                            200: '#FFE680',
-                            300: '#FFD94D',
-                            400: '#D4AF37',
-                            500: '#B8860B',
-                            600: '#9A7209',
-                            700: '#7C5A07',
-                            800: '#5E4205',
-                            900: '#402A03'
-                        },
+                        
                         cream: {
                             50: '#FEFDFB',
                             100: '#FAF7F0',
@@ -128,7 +117,7 @@
 
         /* Gradient text */
         .text-gradient {
-            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #B8860B 100%);
+            background: linear-gradient(135deg, #10B981 0%, #34D399 50%, #10B981 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -136,12 +125,12 @@
 
         /* Subtle pattern background */
         .pattern-bg {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2334D399' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
 
         /* Button styling */
         .btn-primary {
-            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 100%);
+            background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
             color: #FFFFFF !important;
             text-decoration: none !important;
             position: relative;
@@ -162,8 +151,8 @@
             text-decoration: none !important;
         }
 
-        /* Gold border accent */
-        .gold-border {
+        /* Emerald border accent */
+        .emerald-border {
             border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
@@ -185,7 +174,7 @@
         }
 
         /* Glow effect */
-        .gold-glow {
+        .emerald-glow {
             box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
         }
 
@@ -252,7 +241,7 @@
         /* Focus states */
         button:focus-visible,
         a:focus-visible {
-            outline: 2px solid #B8860B;
+            outline: 2px solid #10B981;
             outline-offset: 2px;
         }
 
@@ -292,7 +281,9 @@
             width: 100%;
             height: 100%;
             display: block;
-            object-fit: contain;
+            /* Fill the slider area while preserving crop center */
+            object-fit: cover;
+            object-position: center;
             margin: 0 auto;
         }
 
@@ -374,8 +365,8 @@
         }
 
         .slider-dot.active {
-            background: #D4AF37;
-            border-color: #D4AF37;
+            background: #37d449;
+            border-color: #34D399;
             transform: scale(1.2);
         }
 
@@ -389,7 +380,7 @@
             bottom: 0;
             left: 0;
             height: 3px;
-            background: linear-gradient(90deg, #B8860B, #D4AF37);
+            background: linear-gradient(90deg, #10B981, #34D399);
             z-index: 10;
             transition: width 0.3s ease;
         }
@@ -443,28 +434,24 @@
             <div class="max-w-2xl mx-auto text-center">
                 <!-- Badge -->
                 <div
-                    class="reveal inline-flex items-center gap-2 bg-gold-50 border border-gold-200 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
-                    <span class="w-2 h-2 bg-gold-500 rounded-full pulse-subtle"></span>
-                    <span class="text-gold-700 text-sm sm:text-base font-medium">Dipercaya 700+ Jamaah di Indonesia
+                    class="reveal inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full pulse-subtle"></span>
+                    <span class="text-emerald-700 text-sm sm:text-base font-medium">Dipercaya 700+ Jamaah di Indonesia
                         (2025)</span>
                 </div>
 
                 <!-- Main Headline -->
                 <h1
                     class="reveal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
-                    Umroh Mandiri.<br>
-                    <span class="text-gradient font-bold">Hemat 15 Juta.</span><br>
-                    Tanpa Travel.<br>
-                    Tanpa Bingung<br>
-                    & Tergesa-gesa
+                    Umroh Kok Dikejar-Kejar Jadwal?<br>
+                    <span class="text-gradient font-bold">Emang Bisa Khusyuk?</span>
                 </h1>
 
                 <!-- Subheadline -->
                 <p class="reveal text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed px-2">
-                    Panduan lengkap step by step dari urus visa, booking hotel murah,
-                    cari tiket terbaik, hingga ibadah yang sah sesuai sunnah.<br class="hidden sm:block">
+                    Banyak orang baru sadar setelah berangkat… ternyata umroh lewat travel sering terasa terburu-buru, capek, dan kurang menikmati momen ibadah.<br class="hidden sm:block">
                     <strong>
-                        Cocok untuk pemula. Aman. Legal.
+                        Padahal ada cara agar ibadah terasa lebih tenang, fleksibel, dan sesuai ritme Anda.
                         <span class="text-green-700 font-bold bg-green-100 px-2 py-1 rounded ml-1 text-base">
                             TERUPDATE 2026
                         </span>
@@ -476,64 +463,25 @@
                     <div class="hero-slider rounded-2xl overflow-hidden shadow-lg" id="heroSlider">
                         <div class="slider-track" id="sliderTrack">
                             <div class="slide">
-                                <img src="images/6.png" alt="Tips Booking Pesawat - Kelas Umroh" loading="eager">
-                            </div>
-                            <div class="slide">
-                                <img src="images/1.png" alt="Aplikasi Wajib Umroh - Kelas Umroh" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/2.png" alt="Tips Booking Hotel - Kelas Umroh" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/3.png" alt="Tips Urus Berkas - Kelas Umroh" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/4.png" alt="Tips Transport - Kelas Umroh" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/5.png" alt="Tips Transport - Kelas Umroh" loading="lazy">
+                                <img src="images/13.png" alt="Tips Booking Pesawat - Kelas Umroh" loading="eager">
                             </div>
                         </div>
 
-                        <button class="slider-btn prev" id="sliderPrev" aria-label="Slide sebelumnya">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M15 18l-6-6 6-6" />
-                            </svg>
-                        </button>
-                        <button class="slider-btn next" id="sliderNext" aria-label="Slide berikutnya">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 18l6-6-6-6" />
-                            </svg>
-                        </button>
-
-                        <div class="slider-dots" id="sliderDots">
-                            <button class="slider-dot active" data-index="0" aria-label="Slide 1"></button>
-                            <button class="slider-dot" data-index="1" aria-label="Slide 2"></button>
-                            <button class="slider-dot" data-index="2" aria-label="Slide 3"></button>
-                            <button class="slider-dot" data-index="3" aria-label="Slide 4"></button>
-                            <button class="slider-dot" data-index="4" aria-label="Slide 5"></button>
-                            <button class="slider-dot" data-index="5" aria-label="Slide 6"></button>
-                        </div>
-
+                        <!-- Prev/Next buttons removed per request -->
                         <div class="slider-progress" id="sliderProgress"></div>
                     </div>
                 </div>
 
                 <!-- CTA Button -->
                 <div class="reveal">
-                    <a href="#simulasi-biaya"
+                    <a href="#solution"
                         class="btn-primary inline-flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-lg sm:text-xl">
-                        <span>Travel Umroh vs Umroh Mandiri</span>
+                        <span>Mau Umroh Aman?</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
-                    <p class="text-base text-gray-500 mt-3">
-                        simak estimasi biaya nya disini
-                    </p>
                 </div>
             </div>
         </section>
@@ -543,36 +491,131 @@
             <div class="max-w-2xl mx-auto">
                 <div class="reveal text-center mb-8 sm:mb-10">
                     <span
-                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
-                        Banyak Orang Ingin Umroh.
+                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        Realita Umroh Pakai Travel yang Jarang Diceritakan
                     </span>
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                        Tapi Takut Berangkat Sendiri.
+                        Awalnya terlihat praktis. Tinggal ikut travel, lalu semua beres,<span class="text-gradient font-bold">Padahal Realitanya</span>
                     </h2>
                 </div>
 
                 <div class="reveal-stagger space-y-3 sm:space-y-4">
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
                         <div
                             class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
                             <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Takut salah urutan ibadah
-                                di Ka'bah</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Urutan salah bisa bikin ibadah tidak sah. Ini
-                                ibadah seumur hidup. Jangan sampai salah.</p>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Jadwal Padat</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Kurang menikmati setiap momen karena jadwal padat.</p>
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
                         <div
                             class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
                             <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Ibadah Jadi Terburu - Buru</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Ibadah jadi terasa terburu-buru, tidak khusyuk.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Harus Selalu Ikut Rombongan</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Harus mengikuti rombongan kurang momen personal.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Cape Fisik & Mental</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Capek fisik dan mental karena kejar-kejaran jadwal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agitation -->
+                <div
+                    class="reveal mt-6 sm:mt-10 p-4 sm:p-6 bg-gradient-to-br from-cream-200 to-cream-100 rounded-2xl border border-emerald-200/50">
+                    <p class="text-gray-700 leading-relaxed text-center text-base sm:text-lg">
+                        Anda sudah <strong>bertahun-tahun menabung</strong> untuk momen ini.
+                        Jangan biarkan <strong>ketidaksiapan</strong> merusak ibadah paling sakral dalam hidup
+                        Anda.<br><br>
+                        <span class="font-semibold text-emerald-700">Semua kekhawatiran di atas bisa dihindari. Dengan
+                            panduan yang benar.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION SECTION -->
+        <section id="solution" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-8 sm:mb-10">
+                    <span
+                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        Solusi Lengkap. Satu Panduan.
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4">
+                        Perkenalkan: <span class="text-gradient"> EbookPanduan Umroh Mandiri</span>
+                    </h2>
+                    <p class="text-gray-600 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+                        Dari nol hingga pulang ke tanah air. Lengkap. Step-by-step.
+                        Dirancang khusus untuk pemula yang belum pernah umroh sekalipun.
+                    </p>
+                </div>
+
+                <!-- Product Features -->
+                <div class="reveal-stagger space-y-3 sm:space-y-5 mb-8 sm:mb-10">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Panduan
+                                Step-by-Step dari A sampai Z</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Urus e-visa mandiri. Booking hotel murah dekat
+                                Masjidil Haram. Cari tiket termurah. Urutan ibadah yang benar. Semuanya ada selangkah
+                                demi selangkah.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -581,76 +624,106 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Tersesat di Mekkah.
-                                Sendirian. Malam.</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Keluar masjid lewat pintu berbeda. HP hampir
-                                mati. Tidak tahu arah pulang, bisa terjadi pada siapa saja.</p>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Peta & Navigasi
+                                Mekkah-Madinah</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Tidak akan tersesat. Pintu masuk terbaik, rute
+                                transportasi termurah, dan tips hindari antrean thawaf semua tersedia.</p>
                         </div>
                     </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
                         <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Paket travel yang mahal
-                            </h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Perorang bisa 35 Juta dan umroh sekeluarga
-                                bisa
-                                sampai ratusan juta. Uang sebanyak itu bisa dihemat belasan juta.</p>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Template Itinerary
+                                Harian Siap Pakai</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Jadwal sudah diatur thawaf, istirahat, ziarah.
+                                Tinggal ikuti. Ibadah optimal, fisik tetap kuat.</p>
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
                         <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Urus visa sendiri?
-                                Kedengarannya rumit</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">E-visa, asuransi, paspor, booking hotel, semua
-                                terasa membingungkan. Akhirnya menyerah dan balik ke travel mahal.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
-                        <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Tidak bisa bahasa Arab
-                                sama sekali</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Naik taksi bingung. Beli makan bingung. Tanya
-                                arah bingung. Hambatan bahasa jadi alasan terbesar takut berangkat sendiri.</p>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Kamus Bahasa Arab
+                                Praktis</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Frasa siap pakai di taksi, restoran, dan saat
+                                minta bantuan. Ditulis dengan tulisan Latin tidak perlu bisa baca Arab.</p>
                         </div>
                     </div>
-                </div>
+                                        <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Strategi Hemat
+                                Hingga Belasan Juta</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Breakdown biaya real. Trik cari tiket murah.
+                                Booking hotel harga lokal. Tanpa mengorbankan kenyamanan ibadah Anda.</p>
+                        </div>
+                    </div>
 
-                <!-- Agitation -->
-                <div
-                    class="reveal mt-6 sm:mt-10 p-4 sm:p-6 bg-gradient-to-br from-cream-200 to-cream-100 rounded-2xl border border-gold-200/50">
-                    <p class="text-gray-700 leading-relaxed text-center text-base sm:text-lg">
-                        Anda sudah <strong>bertahun-tahun menabung</strong> untuk momen ini.
-                        Jangan biarkan <strong>ketidaksiapan</strong> merusak ibadah paling sakral dalam hidup
-                        Anda.<br><br>
-                        <span class="font-semibold text-gold-700">Semua kekhawatiran di atas bisa dihindari. Dengan
-                            panduan yang benar.</span>
-                    </p>
+                <div class="reveal relative mb-6 sm:mb-10 max-w-[320px] sm:max-w-[360px] mx-auto">
+                    <div class="testi-slider rounded-2xl overflow-hidden shadow-lg" id="testiSlider">
+                        <div class="slider-track" id="testiTrack">
+                            <div class="slide">
+                                <img src="images/2.png" alt="Testimoni WA 1" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="images/3.png" alt="Testimoni WA 2" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="images/4.png" alt="Testimoni WA 3" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="images/5.png" alt="Testimoni WA 4" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="images/1.png" alt="Testimoni WA 5" loading="lazy">
+                            </div>
+                        </div>
+
+                        <button class="slider-btn prev" id="testiPrev" aria-label="Testimoni sebelumnya">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="slider-btn next" id="testiNext" aria-label="Testimoni berikutnya">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots" id="testiDots">
+                            <button class="slider-dot active" data-index="0" aria-label="Testimoni 1"></button>
+                            <button class="slider-dot" data-index="1" aria-label="Testimoni 2"></button>
+                            <button class="slider-dot" data-index="2" aria-label="Testimoni 3"></button>
+                            <button class="slider-dot" data-index="3" aria-label="Testimoni 4"></button>
+                            <button class="slider-dot" data-index="4" aria-label="Testimoni 5"></button>
+                        </div>
+
+                        <div class="slider-progress" id="testiProgress"></div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -660,7 +733,7 @@
             <div class="max-w-2xl mx-auto">
                 <div class="reveal text-center mb-6 sm:mb-8">
                     <span
-                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
                         Bukan Janji Kosong — Ini Angka Nyata
                     </span>
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2 sm:mb-3">
@@ -672,8 +745,8 @@
                 </div>
 
                 <!-- COST CARD -->
-                <div class="reveal bg-white rounded-2xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-gold-200">
-                    <div class="bg-gradient-to-r from-gold-500 to-gold-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
+                <div class="reveal bg-white rounded-2xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-emerald-200">
+                    <div class="bg-gradient-to-r from-emerald-500 to-emerald-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
                         <p class="text-white font-semibold text-sm sm:text-base tracking-wide">
                             Estimasi Biaya Umroh Mandiri (Per Orang)
                         </p>
@@ -683,78 +756,78 @@
                         <div
                             class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
                             <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M2 16l20-6-20-6v5l14 1-14 1v5z" />
                                 </svg>
                             </div>
                             <p class="font-medium text-gray-800 text-sm sm:text-base">Tiket PP Indonesia – Jeddah</p>
-                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 12 – 15 jt</span>
+                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 12 – 15 jt</span>
                         </div>
 
                         <div
                             class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
                             <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M3 21h18M5 21V7a2 2 0 012-2h10a2 2 0 012 2v14M9 10h.01M15 10h.01M9 14h.01M15 14h.01" />
                                 </svg>
                             </div>
                             <p class="font-medium text-gray-800 text-sm sm:text-base">Hotel 6 malam (quad room)</p>
-                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 2,5 – 3 jt</span>
+                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 2,5 – 3 jt</span>
                         </div>
 
                         <div
                             class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
                             <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z" />
                                 </svg>
                             </div>
                             <p class="font-medium text-gray-800 text-sm sm:text-base">Visa Umroh</p>
-                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 2 – 2,5 jt</span>
+                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 2 – 2,5 jt</span>
                         </div>
 
                         <div
                             class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
                             <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M8 17h8M6 17l-2-5h16l-2 5M7 17v2M17 17v2M6 12V7a2 2 0 012-2h8a2 2 0 012 2v5" />
                                 </svg>
                             </div>
                             <p class="font-medium text-gray-800 text-sm sm:text-base">Transportasi lokal</p>
-                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 300rb –
+                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 300rb –
                                 500rb</span>
                         </div>
 
                         <div
                             class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
                             <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4 3v7a4 4 0 004 4v7M8 3v7M12 3v18M16 3l4 4-4 4V3z" />
                                 </svg>
                             </div>
                             <p class="font-medium text-gray-800 text-sm sm:text-base">Makan & logistik</p>
-                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 500rb – 1jt</span>
+                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 500rb – 1jt</span>
                         </div>
 
                         <div
-                            class="grid grid-cols-[1fr_auto] items-center py-3 sm:py-4 px-3 sm:px-4 mt-3 sm:mt-4 rounded-xl bg-gold-50 border border-gold-200">
+                            class="grid grid-cols-[1fr_auto] items-center py-3 sm:py-4 px-3 sm:px-4 mt-3 sm:mt-4 rounded-xl bg-emerald-50 border border-emerald-200">
                             <p class="font-bold text-gray-900 text-base sm:text-lg">Total Estimasi</p>
-                            <span class="font-bold text-gold-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22
+                            <span class="font-bold text-emerald-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22
                                 juta</span>
                         </div>
                     </div>
@@ -769,11 +842,11 @@
                         <p class="text-gray-400 text-sm mt-1">per orang</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl p-4 sm:p-6 text-center border-2 border-gold-400">
-                        <p class="text-gold-700 text-sm uppercase tracking-wider font-semibold mb-1 sm:mb-2">Umroh
+                    <div class="bg-white rounded-2xl p-4 sm:p-6 text-center border-2 border-emerald-400">
+                        <p class="text-emerald-700 text-sm uppercase tracking-wider font-semibold mb-1 sm:mb-2">Umroh
                             Mandiri</p>
-                        <span class="font-bold text-gold-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22 juta</span>
-                        <p class="text-gold-600 text-sm mt-1 font-semibold">per orang</p>
+                        <span class="font-bold text-emerald-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22 juta</span>
+                        <p class="text-emerald-600 text-sm mt-1 font-semibold">per orang</p>
                     </div>
                 </div>
 
@@ -791,115 +864,6 @@
             </div>
         </section>
 
-        <!-- SOLUTION SECTION -->
-        <section id="solution" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-8 sm:mb-10">
-                    <span
-                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
-                        Solusi Lengkap. Satu Panduan.
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4">
-                        Perkenalkan: <span class="text-gradient"> EbookPanduan Umroh Mandiri</span>
-                    </h2>
-                    <p class="text-gray-600 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-                        Dari nol hingga pulang ke tanah air. Lengkap. Step-by-step.
-                        Dirancang khusus untuk pemula yang belum pernah umroh sekalipun.
-                    </p>
-                </div>
-
-                <!-- Product Features -->
-                <div class="reveal-stagger space-y-3 sm:space-y-5 mb-8 sm:mb-10">
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Panduan
-                                Step-by-Step dari A sampai Z</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Urus e-visa mandiri. Booking hotel murah dekat
-                                Masjidil Haram. Cari tiket termurah. Urutan ibadah yang benar. Semuanya ada selangkah
-                                demi selangkah.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Peta & Navigasi
-                                Mekkah-Madinah</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Tidak akan tersesat. Pintu masuk terbaik, rute
-                                transportasi termurah, dan tips hindari antrean thawaf semua tersedia.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Strategi Hemat
-                                Hingga Belasan Juta</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Breakdown biaya real. Trik cari tiket murah.
-                                Booking hotel harga lokal. Tanpa mengorbankan kenyamanan ibadah Anda.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Template Itinerary
-                                Harian Siap Pakai</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Jadwal sudah diatur thawaf, istirahat, ziarah.
-                                Tinggal ikuti. Ibadah optimal, fisik tetap kuat.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Kamus Bahasa Arab
-                                Praktis</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Frasa siap pakai di taksi, restoran, dan saat
-                                minta bantuan. Ditulis dengan tulisan Latin tidak perlu bisa baca Arab.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- SOCIAL PROOF STAT -->
         <section class="w-full pt-4 pb-6 px-4">
@@ -907,11 +871,11 @@
                 <div class="reveal rounded-2xl p-4 sm:p-6 text-center shadow-lg relative overflow-hidden"
                     style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);">
                     <div class="absolute inset-0 opacity-5"
-                        style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;30&quot; height=&quot;30&quot; viewBox=&quot;0 0 30 30&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Ccircle cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;2&quot; fill=&quot;%23D4AF37&quot;/%3E%3C/svg%3E');">
+                        style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;30&quot; height=&quot;30&quot; viewBox=&quot;0 0 30 30&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Ccircle cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;2&quot; fill=&quot;%2334D399&quot;/%3E%3C/svg%3E');">
                     </div>
                     <div class="relative z-10">
                         <div class="flex items-center justify-center gap-2 sm:gap-3 mb-1">
-                            <svg class="w-5 h-5 sm:w-7 sm:h-7 text-gold-400" fill="none" stroke="currentColor"
+                            <svg class="w-5 h-5 sm:w-7 sm:h-7 text-emerald-400" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                     d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -931,7 +895,7 @@
             <div class="max-w-2xl mx-auto">
                 <div class="reveal text-center mb-6 sm:mb-8">
                     <span
-                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
                         Dipercaya Ratusan Jamaah
                     </span>
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -986,25 +950,25 @@
                 </div>
 
                 <div class="reveal-stagger space-y-4 sm:space-y-5">
-                    <div class="testimonial-card bg-white p-4 sm:p-6 rounded-xl gold-border">
+                    <div class="testimonial-card bg-white p-4 sm:p-6 rounded-xl emerald-border">
                         <div class="flex items-center gap-1 mb-3">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
@@ -1031,8 +995,8 @@
 
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-100 rounded-full flex items-center justify-center">
-                                <span class="text-gold-700 font-semibold text-sm sm:text-base">400+</span>
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                                <span class="text-emerald-700 font-semibold text-sm sm:text-base">400+</span>
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-800 text-sm sm:text-base">400+ Jamaah</p>
@@ -1063,7 +1027,7 @@
             <div class="max-w-2xl mx-auto">
                 <div class="reveal text-center mb-6 sm:mb-8">
                     <span
-                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Investasi
+                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Investasi
                         Terkecil untuk Penghematan Terbesar</span>
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                         Berapa Investasi untuk Panduan Ini?
@@ -1076,8 +1040,8 @@
                 </div>
 
                 <!-- Pricing Card -->
-                <div class="reveal bg-white rounded-2xl shadow-xl gold-glow gold-border overflow-hidden">
-                    <div class="bg-gradient-to-r from-gold-500 to-gold-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
+                <div class="reveal bg-white rounded-2xl shadow-xl emerald-glow emerald-border overflow-hidden">
+                    <div class="bg-gradient-to-r from-emerald-500 to-emerald-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
                         <h2 class="text-white/90 text-sm sm:text-base font-medium">Promo Terbatas Hari Ini !!</h2>
                     </div>
 
@@ -1265,7 +1229,7 @@
 
                 <!-- Guarantee -->
                 <div
-                    class="reveal mt-4 sm:mt-6 p-4 sm:p-5 bg-white rounded-xl gold-border flex items-start gap-3 sm:gap-4">
+                    class="reveal mt-4 sm:mt-6 p-4 sm:p-5 bg-white rounded-xl emerald-border flex items-start gap-3 sm:gap-4">
                     <div
                         class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-green-50 rounded-full flex items-center justify-center">
                         <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor"
@@ -1288,7 +1252,7 @@
             <div class="max-w-2xl mx-auto">
                 <div class="reveal text-center mb-8 sm:mb-10">
                     <span
-                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Masih
+                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Masih
                         Ragu? Kami Jawab Satu per Satu</span>
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                         Pertanyaan yang Sering Ditanyakan
@@ -1296,12 +1260,12 @@
                 </div>
 
                 <div class="reveal-stagger space-y-2 sm:space-y-3">
-                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
                         <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
                             aria-expanded="false">
                             <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah umroh mandiri itu
                                 legal?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -1316,12 +1280,12 @@
                         </div>
                     </div>
 
-                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
                         <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
                             aria-expanded="false">
                             <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Cocok untuk pemula yang
                                 belum pernah umroh?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -1335,12 +1299,12 @@
                         </div>
                     </div>
 
-                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
                         <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
                             aria-expanded="false">
                             <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah lebih sulit dari
                                 ikut travel umroh?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -1355,13 +1319,13 @@
                         </div>
                     </div>
 
-                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
                         <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
                             aria-expanded="false">
                             <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Bagaimana jika tersesat
                                 di
                                 Mekkah atau Madinah?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -1375,12 +1339,12 @@
                         </div>
                     </div>
 
-                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
                         <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
                             aria-expanded="false">
                             <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah panduan sesuai
                                 dengan sunnah?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -1394,12 +1358,12 @@
                         </div>
                     </div>
 
-                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
                         <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
                             aria-expanded="false">
                             <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Berapa lama akses ebook
                                 ini?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -1532,18 +1496,24 @@
                 if (index < 0) index = totalSlides - 1;
                 if (index >= totalSlides) index = 0;
                 currentIndex = index;
-                track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-                dots.forEach(d => d.classList.remove('active'));
-                dots[currentIndex].classList.add('active');
-                const pct = ((currentIndex + 1) / totalSlides) * 100;
-                progress.style.width = pct + '%';
+                if (track) {
+                    track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+                }
+                if (dots && dots.length > 0) {
+                    dots.forEach(d => d.classList.remove('active'));
+                    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+                }
+                if (progress) {
+                    const pct = ((currentIndex + 1) / totalSlides) * 100;
+                    progress.style.width = pct + '%';
+                }
             }
 
             function nextSlide() { goToSlide(currentIndex + 1); }
             function prevSlide() { goToSlide(currentIndex - 1); }
 
-            nextBtn.addEventListener('click', function () { nextSlide(); resetAutoSlide(); });
-            prevBtn.addEventListener('click', function () { prevSlide(); resetAutoSlide(); });
+            if (nextBtn) nextBtn.addEventListener('click', function () { nextSlide(); resetAutoSlide(); });
+            if (prevBtn) prevBtn.addEventListener('click', function () { prevSlide(); resetAutoSlide(); });
 
             dots.forEach(dot => {
                 dot.addEventListener('click', function () {
@@ -1583,68 +1553,63 @@
             startAutoSlide();
         })();
 
-        // ========== TESTIMONIAL SLIDER ==========
+        // ========== TESTIMONIAL SLIDER (no autoplay) ==========
         (function () {
-            const track = document.getElementById('testiTrack');
-            if (!track) return;
-            const slides = track.querySelectorAll('.slide');
-            const prevBtn = document.getElementById('testiPrev');
-            const nextBtn = document.getElementById('testiNext');
-            const dots = document.querySelectorAll('#testiDots .slider-dot');
-            const progress = document.getElementById('testiProgress');
-            const totalSlides = slides.length;
-            if (totalSlides === 0) return;
-            let currentIndex = 0;
-            let autoSlideInterval;
-            const autoSlideDelay = 5000;
+            const sliders = document.querySelectorAll('.testi-slider');
+            sliders.forEach(slider => {
+                const track = slider.querySelector('.slider-track');
+                if (!track) return;
+                const slides = track.querySelectorAll('.slide');
+                const prevBtn = slider.querySelector('.slider-btn.prev');
+                const nextBtn = slider.querySelector('.slider-btn.next');
+                const dots = slider.querySelectorAll('.slider-dot');
+                const progress = slider.querySelector('.slider-progress');
+                const totalSlides = slides.length;
+                if (totalSlides === 0) return;
+                let currentIndex = 0;
 
-            function goToSlide(index) {
-                if (index < 0) index = totalSlides - 1;
-                if (index >= totalSlides) index = 0;
-                currentIndex = index;
-                track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-                dots.forEach(d => d.classList.remove('active'));
-                if (dots[currentIndex]) dots[currentIndex].classList.add('active');
-                const pct = ((currentIndex + 1) / totalSlides) * 100;
-                progress.style.width = pct + '%';
-            }
-
-            function nextSlide() { goToSlide(currentIndex + 1); }
-            function prevSlide() { goToSlide(currentIndex - 1); }
-
-            nextBtn.addEventListener('click', function () { nextSlide(); resetAutoSlide(); });
-            prevBtn.addEventListener('click', function () { prevSlide(); resetAutoSlide(); });
-
-            dots.forEach(dot => {
-                dot.addEventListener('click', function () {
-                    goToSlide(parseInt(this.dataset.index));
-                    resetAutoSlide();
-                });
-            });
-
-            function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, autoSlideDelay); }
-            function resetAutoSlide() { clearInterval(autoSlideInterval); startAutoSlide(); }
-
-            let touchStartX = 0;
-            const slider = document.getElementById('testiSlider');
-
-            slider.addEventListener('touchstart', function (e) {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-
-            slider.addEventListener('touchend', function (e) {
-                const diff = touchStartX - e.changedTouches[0].screenX;
-                if (Math.abs(diff) > 50) {
-                    if (diff > 0) { nextSlide(); } else { prevSlide(); }
-                    resetAutoSlide();
+                function goToSlide(index) {
+                    if (index < 0) index = totalSlides - 1;
+                    if (index >= totalSlides) index = 0;
+                    currentIndex = index;
+                    track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+                    dots.forEach(d => d.classList.remove('active'));
+                    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+                    if (progress) {
+                        const pct = ((currentIndex + 1) / totalSlides) * 100;
+                        progress.style.width = pct + '%';
+                    }
                 }
-            }, { passive: true });
 
-            slider.addEventListener('mouseenter', function () { clearInterval(autoSlideInterval); });
-            slider.addEventListener('mouseleave', function () { startAutoSlide(); });
+                function nextSlide() { goToSlide(currentIndex + 1); }
+                function prevSlide() { goToSlide(currentIndex - 1); }
 
-            goToSlide(0);
-            startAutoSlide();
+                // Only navigate when user interacts (click/touch). No automatic interval restart.
+                if (nextBtn) nextBtn.addEventListener('click', function () { nextSlide(); });
+                if (prevBtn) prevBtn.addEventListener('click', function () { prevSlide(); });
+
+                dots.forEach(dot => {
+                    dot.addEventListener('click', function () {
+                        goToSlide(parseInt(this.dataset.index));
+                    });
+                });
+
+                let touchStartX = 0;
+
+                slider.addEventListener('touchstart', function (e) {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                slider.addEventListener('touchend', function (e) {
+                    const diff = touchStartX - e.changedTouches[0].screenX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) { nextSlide(); } else { prevSlide(); }
+                    }
+                }, { passive: true });
+
+                // Don't auto-start; only go to initial slide.
+                goToSlide(0);
+            });
         })();
     </script>
 </body>
