@@ -1,1713 +1,892 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Panduan Umroh Mandiri - Raih Umroh Impian Tanpa Ribet</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cream: {
-                            50: '#F9FCFF',
-                            100: '#F1F6FF',
-                            200: '#E6EEFF',
-                            300: '#D8E5FF'
-                        },
-                        emerald: {
-                            50: '#EEF5FF',
-                            100: '#DBEAFE',
-                            200: '#BFDBFE',
-                            300: '#93C5FD',
-                            400: '#60A5FA',
-                            500: '#3B82F6',
-                            600: '#2563EB',
-                            700: '#1D4ED8',
-                            800: '#1E40AF',
-                            900: '#1E3A8A'
-                        }
-                    },
-                    fontFamily: {
-                        display: ['Cormorant Garamond', 'serif'],
-                        body: ['DM Sans', 'sans-serif']
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Umroh Mandiri & Privat — Ebook Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 300: '#e6bc72', 400: '#d4a84d', 500: '#c9a96e', 600: '#b08a3a', 700: '#996b2e' },
+            cream: { 50: '#fdfcfa', 100: '#f8f4ed', 200: '#f0e9dc' },
+            dark: { 800: '#2a2a2a', 900: '#171717', 950: '#0f0f0f' }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
         }
-    </script>
-    <style>
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      background-color: #f8f4ed !important;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #2a2a2a;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .page-wrap { background-color: #f8f4ed !important; }
+    .bg-dark-section { background-color: #111111 !important; }
+    .bg-white-section { background-color: #ffffff !important; }
+    .bg-cream-section { background-color: #f8f4ed !important; }
+    .text-soft-white { color: rgba(255,255,255,0.88); }
+    .text-soft-white-muted { color: rgba(255,255,255,0.55); }
+    .text-soft-white-dim { color: rgba(255,255,255,0.32); }
+    .text-body-muted { color: #737373; }
+    .text-body-light { color: #a3a3a3; }
 
-        html {
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
+    /* Buttons */
+    .btn-primary, .btn-outline, .btn-ghost {
+      text-decoration: none !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      border-radius: 14px;
+      padding: 1rem 2rem;
+      font-size: 0.9375rem;
+      letter-spacing: 0.01em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      line-height: 1.2;
+    }
+    .btn-primary {
+      background-color: #c9a96e !important;
+      color: #ffffff !important;
+    }
+    .btn-primary:hover {
+      background-color: #b08a3a !important;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 35px rgba(201,169,110,0.3);
+    }
+    .btn-outline {
+      background-color: transparent !important;
+      color: rgba(255,255,255,0.8) !important;
+      border: 1.5px solid rgba(255,255,255,0.25) !important;
+    }
+    .btn-outline:hover {
+      background-color: rgba(255,255,255,0.08) !important;
+      color: #ffffff !important;
+      border-color: rgba(255,255,255,0.5) !important;
+    }
+    .btn-ghost {
+      background-color: transparent !important;
+      color: #c9a96e !important;
+      border: 1.5px solid rgba(201,169,110,0.4) !important;
+    }
+    .btn-ghost:hover {
+      background-color: rgba(201,169,110,0.08) !important;
+      color: #b08a3a !important;
+    }
 
-        :root {
-            --bg-main: #F5F9FF;
-            --bg-soft: #EEF4FF;
-            --text-main: #1F2937;
-            --primary-400: #60A5FA;
-            --primary-500: #3B82F6;
-            --primary-600: #2563EB;
-            --primary-700: #1D4ED8;
-            --primary-glow: rgba(37, 99, 235, 0.25);
-            --border-accent: rgba(59, 130, 246, 0.2);
-        }
+    /* Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal.d1 { transition-delay: 0.08s; }
+    .reveal.d2 { transition-delay: 0.16s; }
+    .reveal.d3 { transition-delay: 0.24s; }
+    .reveal.d4 { transition-delay: 0.32s; }
+    .reveal.d5 { transition-delay: 0.4s; }
 
-        body {
-            overflow-x: hidden;
-            font-family: 'DM Sans', sans-serif;
-            background: linear-gradient(180deg, var(--bg-main) 0%, #FFFFFF 40%, var(--bg-soft) 100%);
-            color: var(--text-main);
-            min-height: 100vh;
-            width: 100%;
-            max-width: 100vw;
-        }
+    /* Cards */
+    .card {
+      background-color: #ffffff !important;
+      border-radius: 20px;
+      padding: 1.75rem;
+      border: 1px solid rgba(201,169,110,0.1);
+      transition: all 0.35s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 48px rgba(201,169,110,0.1);
+      border-color: rgba(201,169,110,0.25);
+    }
+    .card-dark {
+      background-color: rgba(255,255,255,0.05) !important;
+      border-radius: 20px;
+      padding: 1.75rem;
+      border: 1px solid rgba(255,255,255,0.07);
+      transition: all 0.35s ease;
+    }
+    .card-dark:hover {
+      background-color: rgba(255,255,255,0.08) !important;
+      border-color: rgba(201,169,110,0.2);
+    }
 
-        .font-display {
-            font-family: 'Cormorant Garamond', serif;
-        }
+    /* Divider */
+    .gold-line {
+      width: 52px;
+      height: 2.5px;
+      background-color: #c9a96e;
+      border-radius: 2px;
+    }
 
-        /* Scroll Reveal Animation */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+    /* Ornament */
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      opacity: 0.35;
+    }
+    .ornament::before, .ornament::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #c9a96e, transparent);
+    }
 
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    /* FAQ */
+    .faq-box {
+      background-color: #ffffff !important;
+      border: 1px solid rgba(201,169,110,0.12);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .faq-box.open {
+      border-color: rgba(201,169,110,0.35);
+      box-shadow: 0 4px 20px rgba(201,169,110,0.06);
+    }
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      padding: 1.125rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #171717;
+      gap: 1rem;
+      line-height: 1.5;
+    }
+    .faq-btn svg { flex-shrink: 0; transition: transform 0.3s ease; }
+    .faq-box.open .faq-btn svg { transform: rotate(180deg); }
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-body-inner {
+      padding: 0 1.5rem 1.25rem;
+      font-size: 0.9375rem;
+      color: #737373;
+      line-height: 1.75;
+    }
 
-        /* Stagger children */
-        .reveal-stagger>* {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+    /* Star */
+    .star-icon { color: #c9a96e; }
 
-        .reveal-stagger.active>*:nth-child(1) {
-            transition-delay: 0.1s;
-            opacity: 1;
-            transform: translateY(0);
-        }
+    /* Form inputs */
+    .form-input {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border-radius: 14px;
+      border: 1.5px solid #e5e5e5;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9375rem;
+      color: #171717;
+      transition: all 0.25s ease;
+      background-color: #fdfcfa !important;
+    }
+    .form-input::placeholder { color: #c4c4c4; }
+    .form-input:focus {
+      outline: none;
+      border-color: #c9a96e !important;
+      box-shadow: 0 0 0 4px rgba(201,169,110,0.1);
+    }
 
-        .reveal-stagger.active>*:nth-child(2) {
-            transition-delay: 0.2s;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-stagger.active>*:nth-child(3) {
-            transition-delay: 0.3s;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-stagger.active>*:nth-child(4) {
-            transition-delay: 0.4s;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-stagger.active>*:nth-child(5) {
-            transition-delay: 0.5s;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-stagger.active>*:nth-child(6) {
-            transition-delay: 0.6s;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Gradient text */
-        .text-gradient {
-            background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-500) 55%, #93C5FD 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Subtle pattern background */
-        .pattern-bg {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233B82F6' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        /* Button styling */
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-500) 100%);
-            color: #FFFFFF !important;
-            text-decoration: none !important;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px var(--primary-glow);
-            color: #FFFFFF !important;
-            text-decoration: none !important;
-        }
-
-        .btn-primary:active {
-            transform: translateY(0);
-            color: #FFFFFF !important;
-            text-decoration: none !important;
-        }
-
-        /* Emerald border accent */
-        .emerald-border {
-            border: 1px solid var(--border-accent);
-        }
-
-        /* Floating elements animation */
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .float-animation {
-            animation: float 4s ease-in-out infinite;
-        }
-
-        /* Glow effect */
-        .emerald-glow {
-            box-shadow: 0 0 40px rgba(37, 99, 235, 0.16);
-        }
-
-        /* Counter animation */
-        @keyframes pulse-subtle {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.7;
-            }
-        }
-
-        .pulse-subtle {
-            animation: pulse-subtle 2s ease-in-out infinite;
-        }
-
-        /* Testimonial card hover */
-        .testimonial-card {
-            transition: all 0.3s ease;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-        }
-
-        /* FAQ accordion */
-        .faq-item {
-            border-bottom: 1px solid rgba(59, 130, 246, 0.22);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-        }
-
-        .faq-answer.open {
-            max-height: 500px;
-        }
-
-        /* Reduced motion */
-        @media (prefers-reduced-motion: reduce) {
-
-            .reveal,
-            .reveal-stagger>*,
-            .float-animation,
-            .pulse-subtle {
-                animation: none;
-                transition: none;
-                opacity: 1;
-                transform: none;
-            }
-
-            html {
-                scroll-behavior: auto;
-            }
-        }
-
-        /* Focus states */
-        button:focus-visible,
-        a:focus-visible {
-            outline: 2px solid var(--primary-500);
-            outline-offset: 2px;
-        }
-
-        /* ===== HERO SLIDER ===== */
-        .hero-slider,
-        .testi-slider {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 125%;
-            /* 1350 / 1080 = 1.25 */
-            overflow: hidden;
-            border-radius: 1rem;
-        }
-
-        .slider-track {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
-            will-change: transform;
-        }
-
-        .slider-track .slide {
-            flex: 0 0 100%;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .slider-track .slide img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            /* Fill the slider area while preserving crop center */
-            object-fit: cover;
-            object-position: center;
-            margin: 0 auto;
-        }
-
-        /* Arrow Buttons */
-        .slider-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            border: none;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            color: var(--primary-700);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-            transition: all 0.3s ease;
-            opacity: 0;
-        }
-
-        .hero-slider:hover .slider-btn,
-        .testi-slider:hover .slider-btn {
-            opacity: 1;
-        }
-
-        @media (max-width: 768px) {
-            .slider-btn {
-                opacity: 1;
-                width: 36px;
-                height: 36px;
-            }
-        }
-
-        .slider-btn:hover {
-            background: rgba(255, 255, 255, 1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
-            transform: translateY(-50%) scale(1.08);
-        }
-
-        .slider-btn:active {
-            transform: translateY(-50%) scale(0.96);
-        }
-
-        .slider-btn.prev {
-            left: 12px;
-        }
-
-        .slider-btn.next {
-            right: 12px;
-        }
-
-        /* Dot Indicators */
-        .slider-dots {
-            position: absolute;
-            bottom: 14px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 8px;
-            z-index: 10;
-        }
-
-        .slider-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            background: transparent;
-            cursor: pointer;
-            padding: 0;
-            transition: all 0.3s ease;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .slider-dot.active {
-            background: var(--primary-500);
-            border-color: var(--primary-400);
-            transform: scale(1.2);
-        }
-
-        .slider-dot:hover:not(.active) {
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        /* Progress bar */
-        .slider-progress {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-700), var(--primary-400));
-            z-index: 10;
-            transition: width 0.3s ease;
-        }
-
-        /* Container fix */
-        .container-fix {
-            width: 100%;
-            max-width: 100%;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media (min-width: 640px) {
-            .container-fix {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-        }
-
-        /* Image responsive fix */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Prevent text overflow */
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        span,
-        li {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-    </style>
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+      .btn-primary, .btn-outline, .btn-ghost {
+        width: 100%;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.9375rem;
+      }
+      .card, .card-dark { padding: 1.5rem; }
+    }
+  </style>
 </head>
+<body>
+<div class="page-wrap">
 
-<body class="pattern-bg">
-    <!-- Main Container -->
-    <main class="w-full max-w-full overflow-x-hidden">
+  <!-- ===================== HERO ===================== -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-dark-section">
+    <div class="absolute inset-0">
+      <img src="https://placehold.co/1200x800/111111/c9a96e?text=Ka%27bah+Night+View" alt="Ka'bah" class="w-full h-full object-cover opacity-35">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-dark-950/95"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-dark-950/70 via-transparent to-dark-950/70"></div>
+    </div>
+    <div class="relative z-10 max-w-2xl mx-auto px-6 py-36 text-center">
+      <div class="reveal">
+        <div class="ornament mb-10">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+      </div>
 
-        <!-- HERO SECTION -->
-        <section class="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4">
-            <div class="max-w-2xl mx-auto text-center">
-                <!-- Badge -->
-                <div
-                    class="reveal inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
-                    <span class="w-2 h-2 bg-emerald-500 rounded-full pulse-subtle"></span>
-                    <span class="text-emerald-700 text-sm sm:text-base font-medium">Dipercaya 700+ Jamaah di Indonesia
-                        (2025)</span>
-                </div>
+      <h1 class="reveal d1 font-heading font-bold text-3xl sm:text-[2.6rem] md:text-5xl text-soft-white leading-[1.15] tracking-tight mb-6">
+        Umroh Lebih Tenang, Lebih Fleksibel, dan Bisa Diatur Sendiri
+      </h1>
 
-                <!-- Main Headline -->
-                <h1
-                    class="reveal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
-                    Umroh Kok Dikejar-Kejar Jadwal?<br>
-                    <span class="text-gradient font-bold">Emang Bisa Khusyuk?</span>
-                </h1>
+      <p class="reveal d2 text-base sm:text-lg text-soft-white-muted leading-relaxed max-w-md mx-auto mb-10">
+        Panduan lengkap untuk memahami perjalanan umroh mandiri dengan lebih nyaman, hemat, dan tanpa bingung.
+      </p>
 
-                <!-- Subheadline -->
-                <p class="reveal text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed px-2">
-                    Banyak orang baru sadar setelah berangkat… ternyata umroh lewat travel sering terasa terburu-buru, capek, dan kurang menikmati momen ibadah.<br class="hidden sm:block">
-                    <strong>
-                        Padahal ada cara agar ibadah terasa lebih tenang, fleksibel, dan sesuai ritme Anda.
-                    </strong>
-                </p>
+      <div class="reveal d3 flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14">
+        <a href="#form" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Lihat Isi Ebook
+        </a>
+        <a href="#solution" class="btn-outline">
+          Pelajari Caranya
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
 
-                <!-- Hero Image Slider -->
-                <div class="reveal relative mb-6 sm:mb-8 max-w-[320px] sm:max-w-[360px] mx-auto">
-                    <div class="hero-slider rounded-2xl overflow-hidden shadow-lg" id="heroSlider">
-                        <div class="slider-track" id="sliderTrack">
-                            <div class="slide">
-                                <img src="images/13.png" alt="Tips Booking Pesawat - Kelas Umroh" loading="eager">
-                            </div>
-                        </div>
+      <div class="reveal d4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5 text-[0.8125rem] text-soft-white-dim">
+        <span class="flex items-center gap-1.5">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Cocok untuk Pemula
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Step by Step Lengkap
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Praktis &amp; Mudah Dipahami
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Bisa Lebih Fleksibel
+        </span>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
 
-                        <!-- Prev/Next buttons removed per request -->
-                        <div class="slider-progress" id="sliderProgress"></div>
-                    </div>
-                </div>
+  <!-- ===================== PROBLEM ===================== -->
+  <section class="bg-cream-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-14">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight">
+          Banyak Orang Ingin Umroh, Tapi…
+        </h2>
+      </div>
 
-                <!-- CTA Button -->
-                <div class="reveal">
-                    <a href="#solution"
-                        class="btn-primary inline-flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-lg sm:text-xl">
-                        <span>Mau Umroh Aman?</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </a>
-                </div>
+      <div class="reveal d1 mb-10">
+        <img src="https://placehold.co/700x360/f0e9dc/2d2d2d?text=Contemplating+Journey" alt="Memikirkan perjalanan" class="w-full rounded-2xl object-cover" style="max-height:360px;">
+      </div>
+
+      <div class="reveal d2 space-y-5 text-[0.96875rem] sm:text-base text-body-muted leading-[1.8]">
+        <p>
+          Mungkin Anda sudah lama punya keinginan berangkat umroh. Tapi setiap kali mau mulai, selalu ada yang membuat langkah itu terasa berat.
+        </p>
+        <p>
+          Masih bingung mulai dari mana, takut ribet mengurus perjalanan sendiri, atau khawatir biaya membengkak di tengah jalan.
+        </p>
+        <p>
+          Ragu apakah bisa mengatur jadwal sendiri, bingung pilih hotel yang dekat Masjidil Haram, atau tidak tahu urutan ibadah yang benar saat sudah sampai di Tanah Suci.
+        </p>
+      </div>
+
+      <div class="reveal d3 mt-10 pl-1">
+        <div class="border-l-2 border-gold-500 pl-6 py-1">
+          <p class="font-heading font-semibold text-dark-900 text-base sm:text-[1.0625rem] leading-relaxed">
+            "Padahal dengan panduan yang tepat, umroh mandiri bisa terasa lebih nyaman dan lebih tenang."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUTION ===================== -->
+  <section id="solution" class="bg-white-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight mb-4">
+          Panduan yang Membantu Anda Lebih Siap
+        </h2>
+        <p class="text-body-muted text-base sm:text-[0.96875rem] max-w-md mx-auto leading-[1.75]">
+          Ebook ini dirancang supaya Anda bisa memahami seluruh proses umroh mandiri secara bertahap.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="reveal card flex items-start gap-4">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-cream-100 flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Panduan Step by Step</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.7]">Setiap tahap dijelaskan berurutan, dari persiapan di rumah sampai kembali. Tidak ada langkah yang terlewat.</p>
+          </div>
+        </div>
+
+        <div class="reveal d1 card flex items-start gap-4">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-cream-100 flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Penjelasan yang Praktis</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.7]">Bahasa sederhana dan langsung to the point. Tidak bertele-tele, tapi tetap menyeluruh.</p>
+          </div>
+        </div>
+
+        <div class="reveal d2 card flex items-start gap-4">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-cream-100 flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Perencanaan Perjalanan Fleksibel</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.7]">Anda bisa menyesuaikan jadwal, durasi, dan budget sesuai kebutuhan pribadi tanpa terikat paket yang kaku.</p>
+          </div>
+        </div>
+
+        <div class="reveal d3 card flex items-start gap-4">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-cream-100 flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Tips Persiapan yang Berguna</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.7]">Mulai dari dokumen, packing list, hingga hal kecil yang sering terlupa tapi sangat membantu di lapangan.</p>
+          </div>
+        </div>
+
+        <div class="reveal d4 card flex items-start gap-4">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-cream-100 flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Perjalanan Lebih Nyaman</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.7]">Dengan gambaran yang jelas, Anda bisa menikmati setiap momen tanpa kekhawatiran berlebihan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFITS ===================== -->
+  <section class="bg-cream-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight mb-4">
+          Apa yang Akan Anda Pelajari?
+        </h2>
+        <p class="text-body-muted text-base sm:text-[0.96875rem] max-w-md mx-auto leading-[1.75]">
+          Materi disusun agar Anda merasa lebih siap dan percaya diri sebelum memulai perjalanan.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="reveal card">
+          <div class="flex items-center gap-3.5 mb-2.5">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background-color:rgba(201,169,110,0.08) !important;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
             </div>
-        </section>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.96875rem]">Persiapan Umroh</h3>
+          </div>
+          <p class="text-body-muted text-[0.875rem] leading-[1.7] pl-[3.25rem]">Dokumen, biaya, kesehatan, dan mental — semua dirangkum dalam checklist yang mudah diikuti.</p>
+        </div>
 
-        <!-- PROBLEM SECTION -->
-        <section class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-8 sm:mb-10">
-                    <span
-                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
-                        Realita Umroh Pakai Travel yang Jarang Diceritakan
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                        Awalnya terlihat praktis. Tinggal ikut travel, lalu semua beres,<span class="text-gradient font-bold">Padahal Realitanya</span>
-                    </h2>
-                </div>
-
-                <div class="reveal-stagger space-y-3 sm:space-y-4">
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
-                        <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Jadwal Padat</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Kurang menikmati setiap momen karena jadwal padat.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
-                        <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Ibadah Jadi Terburu - Buru</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Ibadah jadi terasa terburu-buru, tidak khusyuk.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
-                        <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Harus Selalu Ikut Rombongan</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Harus mengikuti rombongan kurang momen personal.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl emerald-border">
-                        <div
-                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Cape Fisik & Mental</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Capek fisik dan mental karena kejar-kejaran jadwal.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Agitation -->
-                <div
-                    class="reveal mt-6 sm:mt-10 p-4 sm:p-6 bg-gradient-to-br from-cream-200 to-cream-100 rounded-2xl border border-emerald-200/50">
-                    <p class="text-gray-700 leading-relaxed text-center text-base sm:text-lg">
-                        Anda sudah <strong>bertahun-tahun menabung</strong> untuk momen ini.
-                        Jangan biarkan <strong>ketidaksiapan</strong> merusak ibadah paling sakral dalam hidup
-                        Anda.<br><br>
-                        <span class="font-semibold text-emerald-700">Semua kekhawatiran di atas bisa dihindari. Dengan
-                            panduan yang benar.</span>
-                    </p>
-                </div>
+        <div class="reveal d1 card">
+          <div class="flex items-center gap-3.5 mb-2.5">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background-color:rgba(201,169,110,0.08) !important;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-        </section>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.96875rem]">Pengaturan Perjalanan</h3>
+          </div>
+          <p class="text-body-muted text-[0.875rem] leading-[1.7] pl-[3.25rem]">Cara memilih tiket pesawat, hotel dekat Masjidil Haram, transportasi lokal, dan menyusun itinerary harian.</p>
+        </div>
 
-        <!-- TRANSITION SECTION -->
-        <section class="w-full py-8 sm:py-10 md:py-12 px-4">
-            <div class="max-w-4xl mx-auto">
-                <div
-                    class="reveal rounded-3xl border border-emerald-200 bg-gradient-to-br from-white via-cream-50 to-emerald-50 p-5 sm:p-7 md:p-8 shadow-lg">
-                    <div class="text-center">
-                        <span
-                            class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-3 py-1 text-xs sm:text-sm font-semibold uppercase tracking-wider text-emerald-700">
-                            Untuk Jamaah yang Ingin Ibadah Lebih Berkualitas
-                        </span>
-                        <h3 class="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                            Banyak yang Belum Tahu<br class="hidden sm:block">...<span class="text-gradient">Umroh itu Sebenarnya Bisa Tanpa Travel</span>.
-                        </h3>
-                        <p class="mt-3 text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                            Justru terasa lebih tenang & fleksibel, karena Anda bisa atur sendiri ritme ibadah sesuai kondisi fisik dan agenda keluarga.
-                        </p>
-                    </div>
-
-                    <div class="reveal-stagger mt-5 sm:mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
-                        <div class="rounded-2xl border border-emerald-200 bg-white p-4 sm:p-5">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                                </svg>
-                            </div>
-                            <h4 class="font-semibold text-gray-900 text-base sm:text-lg mb-1">Lebih Terkendali</h4>
-                            <p class="text-sm sm:text-base text-gray-600">Anggaran jelas dari awal, tanpa biaya yang tidak
-                                terasa menumpuk di akhir.</p>
-                        </div>
-
-                        <div class="rounded-2xl border border-emerald-200 bg-white p-4 sm:p-5">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h4 class="font-semibold text-gray-900 text-base sm:text-lg mb-1">Lebih Fleksibel</h4>
-                            <p class="text-sm sm:text-base text-gray-600">Ritme ibadah menyesuaikan kondisi fisik dan agenda
-                                keluarga, bukan terburu-buru.</p>
-                        </div>
-
-                        <div class="rounded-2xl border border-emerald-200 bg-white p-4 sm:p-5">
-                            <div
-                                class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                            <h4 class="font-semibold text-gray-900 text-base sm:text-lg mb-1">Lebih Tenang</h4>
-                            <p class="text-sm sm:text-base text-gray-600">Ibadah terasa fokus, tidak habis energi untuk
-                                urusan teknis yang membingungkan.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="reveal mt-5 sm:mt-6 rounded-2xl border border-emerald-300 bg-gradient-to-r from-emerald-700 to-emerald-500 px-4 sm:px-6 py-4 sm:py-5 text-center">
-                        <p class="text-white/90 text-sm sm:text-base mb-1">Umroh Tanpa Travel?</p>
-                        <p class="text-white font-semibold text-base sm:text-lg">Tenang Ini Solusi Untuk Anda</p>
-                        <a href="#solution"
-                            class="inline-flex mt-3 items-center justify-center gap-2 rounded-xl bg-white text-emerald-700 px-5 py-2.5 sm:px-6 sm:py-3 font-semibold hover:bg-emerald-50 transition-colors duration-300">
-                            Lihat Panduannya
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+        <div class="reveal d2 card">
+          <div class="flex items-center gap-3.5 mb-2.5">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background-color:rgba(201,169,110,0.08) !important;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-        </section>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.96875rem]">Tips Hemat</h3>
+          </div>
+          <p class="text-body-muted text-[0.875rem] leading-[1.7] pl-[3.25rem]">Strategi sederhana untuk mengoptimalkan budget tanpa mengorbankan kenyamanan ibadah.</p>
+        </div>
 
-        <!-- SOLUTION SECTION -->
-        <section id="solution" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-8 sm:mb-10">
-                    <span
-                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
-                        Solusi Lengkap. Satu Panduan.
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4">
-                        Perkenalkan: <span class="text-gradient"> EbookPanduan Umroh Mandiri</span>
-                    </h2>
-                    <p class="text-gray-600 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-                        Dari nol hingga pulang ke tanah air. Lengkap. Step-by-step.
-                        Dirancang khusus untuk pemula yang belum pernah umroh sekalipun.
-                    </p>
-                </div>
-                
-                <div class="reveal relative mb-6 sm:mb-10 max-w-[320px] sm:max-w-[360px] mx-auto">
-                    <div class="testi-slider rounded-2xl overflow-hidden shadow-lg" id="testiSlider">
-                        <div class="slider-track" id="testiTrack">
-                            <div class="slide">
-                                <img src="images/2.png" alt="Testimoni WA 1" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/3.png" alt="Testimoni WA 2" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/4.png" alt="Testimoni WA 3" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/5.png" alt="Testimoni WA 4" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/1.png" alt="Testimoni WA 5" loading="lazy">
-                            </div>
-                        </div>
-
-                        <button class="slider-btn prev" id="testiPrev" aria-label="Testimoni sebelumnya">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M15 18l-6-6 6-6" />
-                            </svg>
-                        </button>
-                        <button class="slider-btn next" id="testiNext" aria-label="Testimoni berikutnya">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 18l6-6-6-6" />
-                            </svg>
-                        </button>
-
-                        <div class="slider-dots" id="testiDots">
-                            <button class="slider-dot active" data-index="0" aria-label="Testimoni 1"></button>
-                            <button class="slider-dot" data-index="1" aria-label="Testimoni 2"></button>
-                            <button class="slider-dot" data-index="2" aria-label="Testimoni 3"></button>
-                            <button class="slider-dot" data-index="3" aria-label="Testimoni 4"></button>
-                            <button class="slider-dot" data-index="4" aria-label="Testimoni 5"></button>
-                        </div>
-
-                        <div class="slider-progress" id="testiProgress"></div>
-                    </div>
-                </div>
-
-                <!-- Product Features -->
-                <div class="reveal-stagger space-y-3 sm:space-y-5 mb-8 sm:mb-10">
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Strategi Hemat
-                                Hingga Belasan Juta</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Breakdown biaya real. Trik cari tiket murah.
-                                Booking hotel harga lokal. Tanpa mengorbankan kenyamanan ibadah Anda.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Panduan
-                                Step-by-Step dari A sampai Z</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Urus e-visa mandiri. Booking hotel murah dekat
-                                Masjidil Haram. Cari tiket termurah. Urutan ibadah yang benar. Semuanya ada selangkah
-                                demi selangkah.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Peta & Navigasi
-                                Mekkah-Madinah</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Tidak akan tersesat. Pintu masuk terbaik, rute
-                                transportasi termurah, dan tips hindari antrean thawaf semua tersedia.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Template Itinerary
-                                Harian Siap Pakai</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Jadwal sudah diatur thawaf, istirahat, ziarah.
-                                Tinggal ikuti. Ibadah optimal, fisik tetap kuat.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm emerald-border">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
-                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Kamus Bahasa Arab
-                                Praktis</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">Frasa siap pakai di taksi, restoran, dan saat
-                                minta bantuan. Ditulis dengan tulisan Latin tidak perlu bisa baca Arab.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="reveal d3 card">
+          <div class="flex items-center gap-3.5 mb-2.5">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background-color:rgba(201,169,110,0.08) !important;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
             </div>
-        </section>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.96875rem]">Panduan Praktis Ibadah</h3>
+          </div>
+          <p class="text-body-muted text-[0.875rem] leading-[1.7] pl-[3.25rem]">Urutan doa, niat, dan tata cara umroh yang disederhanakan agar mudah diikuti di tempat.</p>
+        </div>
 
-        <!-- SIMULASI BIAYA SECTION -->
-        <section id="simulasi-biaya" class="w-full py-10 sm:py-12 md:py-14 px-4">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-6 sm:mb-8">
-                    <span
-                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
-                        Bukan Janji Kosong — Ini Angka Nyata
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2 sm:mb-3">
-                        Simulasi Biaya <span class="text-gradient">Umroh Mandiri</span>
-                    </h2>
-                    <p class="text-gray-500 text-base sm:text-lg max-w-xl mx-auto">
-                        Estimasi biaya realistis jika umroh mandiri tanpa travel
-                    </p>
-                </div>
-
-                <!-- COST CARD -->
-                <div class="reveal bg-white rounded-2xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-emerald-200">
-                    <div class="bg-gradient-to-r from-emerald-500 to-emerald-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
-                        <p class="text-white font-semibold text-sm sm:text-base tracking-wide">
-                            Estimasi Biaya Umroh Mandiri (Per Orang)
-                        </p>
-                    </div>
-
-                    <div class="p-4 sm:p-6">
-                        <div
-                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M2 16l20-6-20-6v5l14 1-14 1v5z" />
-                                </svg>
-                            </div>
-                            <p class="font-medium text-gray-800 text-sm sm:text-base">Tiket PP Indonesia – Jeddah</p>
-                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 12 – 15 jt</span>
-                        </div>
-
-                        <div
-                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 21h18M5 21V7a2 2 0 012-2h10a2 2 0 012 2v14M9 10h.01M15 10h.01M9 14h.01M15 14h.01" />
-                                </svg>
-                            </div>
-                            <p class="font-medium text-gray-800 text-sm sm:text-base">Hotel 6 malam (quad room)</p>
-                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 2,5 – 3 jt</span>
-                        </div>
-
-                        <div
-                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z" />
-                                </svg>
-                            </div>
-                            <p class="font-medium text-gray-800 text-sm sm:text-base">Visa Umroh</p>
-                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 2 – 2,5 jt</span>
-                        </div>
-
-                        <div
-                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 17h8M6 17l-2-5h16l-2 5M7 17v2M17 17v2M6 12V7a2 2 0 012-2h8a2 2 0 012 2v5" />
-                                </svg>
-                            </div>
-                            <p class="font-medium text-gray-800 text-sm sm:text-base">Transportasi lokal</p>
-                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 300rb –
-                                500rb</span>
-                        </div>
-
-                        <div
-                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-50 rounded-lg flex items-center justify-center border border-emerald-200">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 3v7a4 4 0 004 4v7M8 3v7M12 3v18M16 3l4 4-4 4V3z" />
-                                </svg>
-                            </div>
-                            <p class="font-medium text-gray-800 text-sm sm:text-base">Makan & logistik</p>
-                            <span class="font-bold text-emerald-700 text-base sm:text-xl tabular-nums">± 500rb – 1jt</span>
-                        </div>
-
-                        <div
-                            class="grid grid-cols-[1fr_auto] items-center py-3 sm:py-4 px-3 sm:px-4 mt-3 sm:mt-4 rounded-xl bg-emerald-50 border border-emerald-200">
-                            <p class="font-bold text-gray-900 text-base sm:text-lg">Total Estimasi</p>
-                            <span class="font-bold text-emerald-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22
-                                juta</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COMPARISON -->
-                <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
-                    <div class="bg-white rounded-2xl p-4 sm:p-6 text-center border-2 border-red-200">
-                        <p class="text-red-500 text-sm uppercase tracking-wider font-semibold mb-1 sm:mb-2">Via Travel
-                        </p>
-                        <span class="font-bold text-red-500 text-2xl sm:text-3xl tabular-nums">± 32 – 35 juta</span>
-                        <p class="text-gray-400 text-sm mt-1">per orang</p>
-                    </div>
-
-                    <div class="bg-white rounded-2xl p-4 sm:p-6 text-center border-2 border-emerald-400">
-                        <p class="text-emerald-700 text-sm uppercase tracking-wider font-semibold mb-1 sm:mb-2">Umroh
-                            Mandiri</p>
-                        <span class="font-bold text-emerald-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22 juta</span>
-                        <p class="text-emerald-600 text-sm mt-1 font-semibold">per orang</p>
-                    </div>
-                </div>
-
-                <!-- Savings Highlight -->
-                <div
-                    class="reveal max-w-xl mx-auto rounded-2xl px-4 sm:px-6 py-5 sm:py-7 text-center mb-6 sm:mb-10 bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-500 shadow-lg">
-                    <p class="text-emerald-200 text-sm sm:text-base font-medium mb-1">Potensi Penghematan Anda</p>
-                    <span class="block font-bold text-white text-2xl sm:text-3xl md:text-4xl tabular-nums mb-2">Hemat
-                        hingga 15 juta</span>
-                    <p class="text-white text-sm sm:text-base leading-relaxed max-w-md mx-auto">
-                        Bisa untuk oleh-oleh, sedekah di Tanah Suci, jalan-jalan ke destinasi terdekat, atau dana umroh
-                        berikutnya.
-                    </p>
-                </div>
+        <div class="reveal d4 card">
+          <div class="flex items-center gap-3.5 mb-2.5">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background-color:rgba(201,169,110,0.08) !important;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
             </div>
-        </section>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.96875rem]">Pengalaman Lebih Tenang</h3>
+          </div>
+          <p class="text-body-muted text-[0.875rem] leading-[1.7] pl-[3.25rem]">Cara mengatur ritme perjalanan agar ibadah tetap fokus dan tubuh tidak kelelahan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===================== EBOOK PREVIEW ===================== -->
+  <section id="ebook-preview" class="bg-white-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-14">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight">
+          Sekilas Tentang Ebook Ini
+        </h2>
+      </div>
 
-        <!-- SOCIAL PROOF STAT -->
-        <section class="w-full pt-4 pb-6 px-4">
-            <div class="max-w-2xl mx-auto">
-                <div
-                    class="reveal rounded-2xl p-4 sm:p-6 text-center shadow-lg relative overflow-hidden border border-emerald-200 bg-gradient-to-br from-emerald-100 via-cream-50 to-emerald-50">
-                    <div class="absolute inset-0 opacity-5"
-                        style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;30&quot; height=&quot;30&quot; viewBox=&quot;0 0 30 30&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Ccircle cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;2&quot; fill=&quot;%233B82F6&quot;/%3E%3C/svg%3E');">
-                    </div>
-                    <div class="relative z-10">
-                        <div class="flex items-center justify-center gap-2 sm:gap-3 mb-1">
-                            <svg class="w-5 h-5 sm:w-7 sm:h-7 text-emerald-400" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                            <p class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">724+</p>
-                        </div>
-                        <p class="text-slate-800 font-semibold text-lg sm:text-xl">Jamaah Sudah Terbantu</p>
-                        <p class="text-slate-600 text-sm sm:text-base mt-1">dan berhasil umroh mandiri dengan panduan ini
-                        </p>
-                    </div>
-                </div>
+      <div class="reveal d1 flex justify-center mb-12">
+        <div class="relative" style="max-width:280px;">
+          <img src="https://placehold.co/280x400/c9a96e/ffffff?text=Ebook+Cover%0AUmroh+Mandiri" alt="Cover Ebook" class="w-full rounded-lg" style="box-shadow: 0 25px 70px rgba(0,0,0,0.18), 0 8px 25px rgba(0,0,0,0.12); aspect-ratio:280/400; object-fit:cover;">
+        </div>
+      </div>
+
+      <div class="reveal d2 text-center mb-8">
+        <p class="text-body-muted text-base sm:text-[0.96875rem] leading-[1.75] max-w-md mx-auto">
+          Disusun dengan bahasa sederhana agar mudah dipahami dan langsung dipraktikkan.
+        </p>
+      </div>
+
+      <div class="reveal d3 max-w-xs mx-auto space-y-3">
+        <div class="flex items-center gap-3 text-[0.875rem] text-body-muted">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Halaman panduan yang terstruktur rapi
+        </div>
+        <div class="flex items-center gap-3 text-[0.875rem] text-body-muted">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Checklist persiapan yang bisa dicetak
+        </div>
+        <div class="flex items-center gap-3 text-[0.875rem] text-body-muted">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Format digital, bisa dibaca kapan saja
+        </div>
+        <div class="flex items-center gap-3 text-[0.875rem] text-body-muted">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          Materi yang relevan dan up-to-date
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIAL (LENGKAP) ===================== -->
+  <section class="bg-cream-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight mb-4">
+          Cerita dari Pembaca Ebook
+        </h2>
+        <p class="text-body-muted text-base sm:text-[0.96875rem] max-w-md mx-auto leading-[1.75]">
+          Banyak pembaca merasa lebih percaya diri memahami perjalanan umroh mandiri setelah membaca panduan ini.
+        </p>
+      </div>
+
+      <div class="space-y-5">
+        <!-- Testimonial 1 -->
+        <div class="reveal card">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-body-muted text-[0.9375rem] leading-[1.8] mb-6">
+            "Saya selalu berpikir umroh mandiri itu terlalu rumit untuk orang awam. Tapi setelah baca ebook ini, langkah-langkahnya terasa jauh lebih masuk akal. Checklist-nya sangat membantu, terutama bagian persiapan dokumen dan pemilihan hotel."
+          </p>
+          <div class="flex items-center gap-3.5">
+            <img src="https://placehold.co/44x44/e6bc72/ffffff?text=BN" alt="Bu Nurul" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <p class="font-heading font-semibold text-dark-900 text-[0.8125rem]">Bu Nurul</p>
+              <p class="text-body-light text-[0.75rem]">Ibu Rumah Tangga — Jakarta</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- SOCIAL PROOF SECTION -->
-        <section id="social-proof" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-6 sm:mb-8">
-                    <span
-                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
-                        Dipercaya Ratusan Jamaah
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                        Apa Kata Mereka?
-                    </h2>
-                </div>
-
-                <!-- Testimonial Screenshot Carousel -->
-                <div class="reveal relative mb-6 sm:mb-10 max-w-[320px] sm:max-w-[360px] mx-auto">
-                    <div class="testi-slider rounded-2xl overflow-hidden shadow-lg" id="testiSlider">
-                        <div class="slider-track" id="testiTrack">
-                            <div class="slide">
-                                <img src="images/9.png" alt="Testimoni WA 1" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/10.png" alt="Testimoni WA 2" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/8.png" alt="Testimoni WA 3" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/12.png" alt="Testimoni WA 4" loading="lazy">
-                            </div>
-                            <div class="slide">
-                                <img src="images/11.png" alt="Testimoni WA 5" loading="lazy">
-                            </div>
-                        </div>
-
-                        <button class="slider-btn prev" id="testiPrev" aria-label="Testimoni sebelumnya">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M15 18l-6-6 6-6" />
-                            </svg>
-                        </button>
-                        <button class="slider-btn next" id="testiNext" aria-label="Testimoni berikutnya">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 18l6-6-6-6" />
-                            </svg>
-                        </button>
-
-                        <div class="slider-dots" id="testiDots">
-                            <button class="slider-dot active" data-index="0" aria-label="Testimoni 1"></button>
-                            <button class="slider-dot" data-index="1" aria-label="Testimoni 2"></button>
-                            <button class="slider-dot" data-index="2" aria-label="Testimoni 3"></button>
-                            <button class="slider-dot" data-index="3" aria-label="Testimoni 4"></button>
-                            <button class="slider-dot" data-index="4" aria-label="Testimoni 5"></button>
-                        </div>
-
-                        <div class="slider-progress" id="testiProgress"></div>
-                    </div>
-                </div>
-
-                <div class="reveal-stagger space-y-4 sm:space-y-5">
-                    <div class="testimonial-card bg-white p-4 sm:p-6 rounded-xl emerald-border">
-                        <div class="flex items-center gap-1 mb-3">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                        </div>
-
-                        <p class="text-gray-700 mb-3 leading-relaxed text-base sm:text-lg">
-                            Dari pengalaman kami membantu banyak jamaah berangkat umroh mandiri,
-                            banyak yang akhirnya bisa menghemat budget cukup besar dibanding paket travel.
-                            Sisa budget tersebut biasanya dialokasikan untuk:
-                        </p>
-
-                        <ul class="list-disc pl-5 text-gray-700 text-sm sm:text-base space-y-1 mb-4">
-                            <li>City tour ke <strong>Thaif</strong></li>
-                            <li>Mengunjungi <strong>Al Ula</strong></li>
-                            <li>Ziarah ke <strong>Jabal Uhud</strong></li>
-                            <li>Mengunjungi <strong>Masjid Quba Qiblatain</strong></li>
-                            <li>City tour sekitar <strong>Madinah</strong></li>
-                            <li>Mengunjungi <strong>Jabal Khandamah</strong></li>
-                            <li>Menikmati <strong>kuliner khas Arab</strong></li>
-                            <li>Membeli <strong>oleh-oleh</strong> untuk keluarga</li>
-                            <li>Menambah <strong>malam menginap hotel</strong></li>
-                            <li>Menyimpan sisa dana untuk <strong>umroh berikutnya</strong></li>
-                        </ul>
-
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                                <span class="text-emerald-700 font-semibold text-sm sm:text-base">400+</span>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm sm:text-base">400+ Jamaah</p>
-                                <p class="text-gray-500 text-sm">Pengguna Panduan Umroh Mandiri</p>
-                            </div>
-                        </div>
-
-                        <div class="mt-4 sm:mt-5 pt-4 border-t">
-                            <div
-                                class="bg-emerald-50 border border-emerald-200 rounded-lg px-3 sm:px-4 py-3 text-center">
-                                <p class="text-sm sm:text-lg font-semibold text-gray-800 leading-relaxed">
-                                    Cocok untuk kamu yang ingin
-                                    <span class="text-emerald-600 font-bold">umroh mandiri</span>
-                                    sendiri, bersama
-                                    <span class="font-bold">pasangan</span>,
-                                    <span class="font-bold">sahabat</span>,
-                                    atau <span class="font-bold">rombongan keluarga</span>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Testimonial 2 -->
+        <div class="reveal d1 card">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-body-muted text-[0.9375rem] leading-[1.8] mb-6">
+            "Yang paling saya suka adalah penjelasan tentang ritme perjalanan. Saya dulu khawatir kalau berangkat sendiri nanti kelelahan. Ternyata ada cara mengatur jadwal harian yang jauh lebih santai dibanding ikut paket."
+          </p>
+          <div class="flex items-center gap-3.5">
+            <img src="https://placehold.co/44x44/d4a84d/ffffff?text=PA" alt="Pak Ahmad" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <p class="font-heading font-semibold text-dark-900 text-[0.8125rem]">Pak Ahmad</p>
+              <p class="text-body-light text-[0.75rem]">Pegawai Swasta — Bandung</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- CHECKOUT SECTION -->
-        <section id="checkout" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-gradient-to-b from-cream-100 to-cream-50">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-6 sm:mb-8">
-                    <span
-                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Investasi
-                        Terkecil untuk Penghematan Terbesar</span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                        Berapa Investasi untuk Panduan Ini?
-                    </h2>
-                    <p class="text-gray-600 text-base sm:text-lg max-w-lg mx-auto">
-                        Jika mengikuti travel, Anda bisa menghabiskan hingga <strong>35 juta per orang</strong>. Namun
-                        dengan panduan ini, Anda bisa belajar bagaimana merencanakan umroh mandiri dengan biaya
-                        <strong>jauh lebih hemat.</strong>
-                    </p>
-                </div>
-
-                <!-- Pricing Card -->
-                <div class="reveal bg-white rounded-2xl shadow-xl emerald-glow emerald-border overflow-hidden">
-                    <div class="bg-gradient-to-r from-emerald-500 to-emerald-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
-                        <h2 class="text-white/90 text-sm sm:text-base font-medium">Promo Terbatas Hari Ini !!</h2>
-                    </div>
-
-                    <div class="p-4 sm:p-6 md:p-8">
-                        <div class="text-center mb-4 sm:mb-6">
-                            <div class="flex items-center justify-center gap-2 sm:gap-3 mb-2">
-                                <span class="relative inline-block text-gray-500 text-xl sm:text-3xl font-semibold">
-                                    Rp 288.000
-                                    <span
-                                        class="absolute left-0 top-1/2 w-full h-[2px] bg-red-500 rotate-[-8deg]"></span>
-                                </span>
-                                <span
-                                    class="bg-red-50 text-red-600 text-sm sm:text-base font-semibold px-2 sm:px-3 py-1 rounded-full">Hemat
-                                    69%</span>
-                            </div>
-                            <p class="font-bold text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900">
-                                Rp 89<span class="text-3xl sm:text-4xl">.000</span>
-                            </p>
-                            <p class="text-gray-500 text-sm sm:text-base mt-2">Sekali bayar, akses selamanya</p>
-                        </div>
-
-                        <div class="text-center mb-2 sm:mb-3">
-                            <p class="text-red-600 font-bold text-base sm:text-lg">🔥 KHUSUS 100 ORANG TERCEPAT DI BULAN INI</p>
-                        </div>
-                        <div
-                            class="bg-red-50 border border-red-200 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 flex flex-col items-center justify-center gap-2 text-center">
-                            <div class="flex items-center gap-2">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-red-800 font-semibold text-base sm:text-lg" id="stock-counter">
-                                    Sisa Slot: 23 Orang
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="mb-4 sm:mb-6">
-                            <p class="font-semibold text-gray-800 mb-3 sm:mb-4 text-base sm:text-lg">Yang Kamu Dapatkan:
-                            </p>
-                            <ul class="space-y-2 sm:space-y-3">
-                                <li class="flex items-start gap-2 sm:gap-3">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    <span class="text-gray-700 text-base sm:text-lg">Panduan lengkap (PDF)</span>
-                                </li>
-                                <li class="flex items-start gap-2 sm:gap-3">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    <span class="text-gray-700 text-base sm:text-lg">Panduan urusan visa &
-                                        dokumen</span>
-                                </li>
-                                <li class="flex items-start gap-2 sm:gap-3">
-                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    <span class="text-gray-700 text-base sm:text-lg">Tips hemat hingga jutaan
-                                        rupiah</span>
-                                </li>
-                            </ul>
-
-                            <!-- Bonus Section -->
-                            <div class="mt-6 sm:mt-8">
-                                <div
-                                    class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl p-3 sm:p-4 shadow-lg">
-                                    <p class="text-sm font-semibold opacity-90">Bonus Eksklusif</p>
-                                    <h3 class="text-lg sm:text-xl font-bold">Bonus Spesial Pemesanan Hari Ini</h3>
-                                    <p class="text-sm opacity-90">Semua bonus ini langsung kamu dapatkan saat membeli.
-                                    </p>
-                                </div>
-                                <div class="mt-4 space-y-3 sm:space-y-4">
-                                    <div
-                                        class="bg-emerald-50 border-2 border-emerald-400 rounded-xl p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4 relative">
-                                        <span
-                                            class="absolute -top-2 left-4 bg-emerald-600 text-white text-[10px] px-2 py-1 rounded-full font-semibold shadow">BONUS
-                                            UTAMA</span>
-                                        <div>
-                                            <p class="font-semibold text-gray-900 text-sm sm:text-base">Link Pengurusan
-                                                Visa, Pesawat & Hotel</p>
-                                            <p class="text-sm text-gray-600 mt-1">Akses link rahasia untuk memesan tiket
-                                                pesawat, hotel dan visa dengan harga jauh lebih hemat.</p>
-                                        </div>
-                                        <div class="sm:text-right flex-shrink-0">
-                                            <p class="line-through text-gray-400 text-base font-medium">Rp 199.000</p>
-                                            <span
-                                                class="bg-emerald-600 text-white text-sm px-3 py-1 rounded-full font-semibold shadow">GRATIS</span>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="bg-white border rounded-xl p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4">
-                                        <div>
-                                            <p class="font-semibold text-gray-800 text-sm sm:text-base">Do'a & Dzikir
-                                                Umroh Sesuai Sunnah</p>
-                                            <p class="text-sm text-gray-500 mt-1">Panduan doa dari berangkat sampai
-                                                pulang, ringkas dan mudah diikuti.</p>
-                                        </div>
-                                        <div class="sm:text-right flex-shrink-0">
-                                            <span
-                                                class="bg-emerald-100 text-emerald-600 text-sm px-2 py-1 rounded-full font-semibold">GRATIS</span>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="bg-white border rounded-xl p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4">
-                                        <div>
-                                            <p class="font-semibold text-gray-800 text-sm sm:text-base">Checklist
-                                                Rencana
-                                                Harian Umroh Mandiri</p>
-                                            <p class="text-sm text-gray-500 mt-1">Roadmap harian agar tidak bingung saat
-                                                menjalankan ibadah.</p>
-                                        </div>
-                                        <div class="sm:text-right flex-shrink-0">
-                                            <span
-                                                class="bg-emerald-100 text-emerald-600 text-sm px-2 py-1 rounded-full font-semibold">GRATIS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Konsultasi Community -->
-                            <div class="mt-4 sm:mt-6 bg-white border rounded-xl p-4 sm:p-5 shadow-sm">
-                                <div class="flex items-start gap-2 sm:gap-3">
-                                    <div class="bg-emerald-100 text-emerald-600 p-1.5 sm:p-2 rounded-lg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5"
-                                            viewBox="0 0 24 24" fill="currentColor">
-                                            <path
-                                                d="M20.52 3.48A11.79 11.79 0 0012.01 0C5.39 0 .02 5.37 0 12c0 2.11.55 4.18 1.6 6.02L0 24l6.17-1.62A11.93 11.93 0 0012.01 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.49-8.52zM12 21.8c-1.86 0-3.67-.5-5.25-1.45l-.37-.22-3.66.96.98-3.57-.24-.37A9.8 9.8 0 012.2 12C2.2 6.59 6.59 2.2 12 2.2c2.61 0 5.06 1.02 6.9 2.86A9.7 9.7 0 0121.8 12c0 5.41-4.39 9.8-9.8 9.8zm5.39-7.34c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.73.94-.89 1.13-.16.19-.32.22-.61.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.73-1.61-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.32.44-.48.15-.16.19-.29.29-.48.1-.19.05-.35-.02-.5-.07-.15-.64-1.54-.87-2.11-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.35-.26.29-1 1-1 2.44 0 1.44 1.02 2.83 1.17 3.02.15.19 2.01 3.07 4.87 4.31.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.12.54-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.17-.55-.32z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-gray-800 text-sm sm:text-base">Akses Grup Umroh
-                                            Mandiri</p>
-                                        <p class="text-sm text-gray-500 mt-1">Kamu bisa konsultasi langsung dengan
-                                            member lain tentang tiket, hotel, visa, hingga pengalaman umroh mandiri.</p>
-                                        <span
-                                            class="inline-block mt-2 bg-emerald-50 text-emerald-600 text-sm px-2 py-1 rounded-full font-medium">Grup
-                                            WhatsApp</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CTA Button -->
-                        <a href="#checkout"
-                            class="btn-primary inline-flex items-center justify-center gap-2 sm:gap-3 w-full px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-lg sm:text-xl">
-                            <span>Gabung Sekarang</span>
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </a>
-
-                        <!-- Trust Elements -->
-                        <div
-                            class="mt-4 sm:mt-6 flex items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base text-gray-500">
-                            <div class="flex items-center gap-1 sm:gap-2">
-                                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                                <span>Pembayaran Aman</span>
-                            </div>
-                            <div class="flex items-center gap-1 sm:gap-2">
-                                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                                </svg>
-                                <span>Berbagai Metode</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Guarantee -->
-                <div
-                    class="reveal mt-4 sm:mt-6 p-4 sm:p-5 bg-white rounded-xl emerald-border flex items-start gap-3 sm:gap-4">
-                    <div
-                        class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 rounded-full flex items-center justify-center">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Garansi Kepuasan</p>
-                        <p class="text-gray-600 text-sm sm:text-base">Jika panduan ini tidak membantu persiapan umrohmu,
-                            hubungi kami dalam 7 hari untuk pengembalian dana penuh.</p>
-                    </div>
-                </div>
+        <!-- Testimonial 3 -->
+        <div class="reveal d2 card">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-body-muted text-[0.9375rem] leading-[1.8] mb-6">
+            "Saya dan suami sudah lama ingin umroh tapi selalu menunda karena bingung soal biaya. Ebook ini memberikan gambaran realistis tentang kisaran pengeluaran dan di mana saja bisa menghemat."
+          </p>
+          <div class="flex items-center gap-3.5">
+            <img src="https://placehold.co/44x44/b08a3a/ffffff?text=HF" alt="Ibu Hana" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <p class="font-heading font-semibold text-dark-900 text-[0.8125rem]">Ibu Hana &amp; Suami</p>
+              <p class="text-body-light text-[0.75rem]">Wirausaha — Surabaya</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- FAQ SECTION -->
-        <section class="w-full py-10 sm:py-12 md:py-14 px-4">
-            <div class="max-w-2xl mx-auto">
-                <div class="reveal text-center mb-8 sm:mb-10">
-                    <span
-                        class="inline-block text-emerald-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Masih
-                        Ragu? Kami Jawab Satu per Satu</span>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                        Pertanyaan yang Sering Ditanyakan
-                    </h2>
-                </div>
-
-                <div class="reveal-stagger space-y-2 sm:space-y-3">
-                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
-                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
-                            aria-expanded="false">
-                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah umroh mandiri itu
-                                legal?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-4 sm:px-5">
-                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
-                                Ya, umroh mandiri sepenuhnya legal. Pemerintah Arab Saudi membuka kesempatan untuk
-                                jamaah mengurus visa umroh secara mandiri. Ebook ini juga membahas prosedur legal yang
-                                perlu kamu lengkapi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
-                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
-                            aria-expanded="false">
-                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Cocok untuk pemula yang
-                                belum pernah umroh?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-4 sm:px-5">
-                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
-                                Tentu! Panduan ini justru dirancang untuk pemula. Setiap langkah dijelaskan secara
-                                detail dengan bahasa yang mudah dipahami, termasuk ilustrasi dan tips praktis.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
-                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
-                            aria-expanded="false">
-                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah lebih sulit dari
-                                ikut travel umroh?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-4 sm:px-5">
-                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
-                                Ada tantangan tambahan, tapi dengan panduan yang tepat, semuanya bisa diatasi.
-                                Keuntungannya: kamu bebas mengatur jadwal, lebih hemat, dan pengalaman menjadi lebih
-                                personal.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
-                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
-                            aria-expanded="false">
-                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Bagaimana jika tersesat
-                                di
-                                Mekkah atau Madinah?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-4 sm:px-5">
-                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
-                                Panduan ini menyertakan peta lokasi penting, tips navigasi, dan aplikasi yang
-                                direkomendasikan untuk tracking lokasi. Ditambah tips berkomunikasi jika butuh bantuan.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
-                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
-                            aria-expanded="false">
-                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah panduan sesuai
-                                dengan sunnah?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-4 sm:px-5">
-                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
-                                Ya, tata cara ibadah dalam panduan ini merujuk pada dalil-dalil shahih dan pendapat
-                                ulama terpercaya. Kami menyertakan referensi untuk setiap panduan ibadah.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-xl emerald-border overflow-hidden">
-                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
-                            aria-expanded="false">
-                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Berapa lama akses ebook
-                                ini?</span>
-                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-4 sm:px-5">
-                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
-                                Selamanya! Setelah pembelian, ebook akan dikirim ke email kamu dan bisa diunduh kapan
-                                saja. Tidak ada batas waktu akses.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Testimonial 4 -->
+        <div class="reveal d3 card">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-icon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-body-muted text-[0.9375rem] leading-[1.8] mb-6">
+            "Sebagai anak muda yang belum pernah umroh, ebook ini cocok banget untuk level pemahaman saya. Bahasanya santai dan enak dibaca. Saya jadi lebih paham apa itu umroh mandiri dan kenapa banyak orang mulai memilih jalur ini."
+          </p>
+          <div class="flex items-center gap-3.5">
+            <img src="https://placehold.co/44x44/996b2e/ffffff?text=DR" alt="Dimas" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <p class="font-heading font-semibold text-dark-900 text-[0.8125rem]">Dimas Rizki</p>
+              <p class="text-body-light text-[0.75rem]">Mahasiswa — Yogyakarta</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- COPYRIGHT -->
-        <footer class="w-full py-4 sm:py-6 px-4 border-t border-gray-100">
-            <p class="text-center text-gray-400 text-sm sm:text-base">
-                2026 @kelasumrohmandiri.
-            </p>
-        </footer>
+  <!-- ===================== WHY PEOPLE LOVE THIS ===================== -->
+  <section class="bg-white-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight">
+          Kenapa Banyak Orang Mulai Tertarik Umroh Mandiri?
+        </h2>
+      </div>
 
-    </main>
+      <div class="space-y-7">
+        <div class="reveal flex items-start gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center mt-0.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Lebih Fleksibel</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.75]">Jadwal bisa disesuaikan dengan kondisi dan kebutuhan masing-masing, tanpa mengikuti kelompok besar.</p>
+          </div>
+        </div>
 
-    <script>
-        // Initialize variables first
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealStaggerElements = document.querySelectorAll('.reveal-stagger');
-        const faqToggles = document.querySelectorAll('.faq-toggle');
-        let stockCount = 23;
+        <div class="reveal d1 flex items-start gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center mt-0.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Lebih Personal</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.75]">Perjalanan terasa lebih bermakna karena bisa dinikmati bersama orang terdekat dengan ritme sendiri.</p>
+          </div>
+        </div>
 
-        // Scroll Reveal with IntersectionObserver
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
+        <div class="reveal d2 flex items-start gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center mt-0.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Bisa Menyesuaikan Kebutuhan</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.75]">Pemilihan hotel, durasi tinggal, hingga makanan — semuanya bisa disesuaikan dengan preferensi pribadi.</p>
+          </div>
+        </div>
 
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
+        <div class="reveal d3 flex items-start gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center mt-0.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Ritme Ibadah Lebih Nyaman</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.75]">Tidak perlu terburu-buru mengikuti jadwal rombongan. Bisa lebih fokus dan khusyuk dalam setiap ibadah.</p>
+          </div>
+        </div>
 
-        revealElements.forEach(el => revealObserver.observe(el));
-        revealStaggerElements.forEach(el => revealObserver.observe(el));
+        <div class="reveal d4 flex items-start gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center mt-0.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-dark-900 text-[0.9375rem] mb-1">Pengalaman Terasa Lebih Tenang</h3>
+            <p class="text-body-muted text-[0.875rem] leading-[1.75]">Dengan persiapan matang, perjalanan umroh mandiri bisa jadi pengalaman spiritual yang lebih dalam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // FAQ Accordion
-        faqToggles.forEach(toggle => {
-            toggle.addEventListener('click', function () {
-                const parent = this.parentElement;
-                const answer = parent.querySelector('.faq-answer');
-                const icon = this.querySelector('.faq-icon');
-                const isOpen = answer.classList.contains('open');
+  <!-- ===================== FAQ ===================== -->
+  <section class="bg-cream-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-dark-900 leading-[1.2] tracking-tight mb-4">
+          Pertanyaan yang Sering Ditanyakan
+        </h2>
+        <p class="text-body-muted text-base sm:text-[0.96875rem] max-w-md mx-auto leading-[1.75]">
+          Beberapa hal yang mungkin juga Anda pikirkan saat ini.
+        </p>
+      </div>
 
-                document.querySelectorAll('.faq-answer').forEach(a => {
-                    a.classList.remove('open');
-                    a.style.maxHeight = null;
-                });
-                document.querySelectorAll('.faq-icon').forEach(i => {
-                    i.style.transform = 'rotate(0deg)';
-                });
-                document.querySelectorAll('.faq-toggle').forEach(t => {
-                    t.setAttribute('aria-expanded', 'false');
-                });
+      <div class="space-y-3.5">
+        <div class="reveal faq-box">
+          <button class="faq-btn">
+            <span>Apakah ebook ini cocok untuk pemula yang belum pernah umroh?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body"><div class="faq-body-inner">Tentu. Ebook ini justru ditulis dengan asumsi bahwa pembacanya belum memiliki pengalaman umroh. Bahasa yang digunakan sederhana dan setiap langkah dijelaskan dari awal.</div></div>
+        </div>
 
-                if (!isOpen) {
-                    answer.classList.add('open');
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    icon.style.transform = 'rotate(180deg)';
-                    this.setAttribute('aria-expanded', 'true');
-                }
-            });
-        });
+        <div class="reveal d1 faq-box">
+          <button class="faq-btn">
+            <span>Apakah saya harus sudah pernah umroh untuk memahaminya?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body"><div class="faq-body-inner">Tidak perlu sama sekali. Materi dirancang untuk siapa saja yang ingin memahami konsep umroh mandiri, baik yang sudah pernah maupun yang belum.</div></div>
+        </div>
 
-        // Stock counter animation
-        function updateStockCounter() {
-            const counter = document.getElementById('stock-counter');
-            if (counter && stockCount > 15) {
-                if (Math.random() > 0.95) {
-                    stockCount--;
-                    counter.textContent = 'Sisa Slot: ' + stockCount + ' Orang';
-                    counter.style.transition = 'transform 0.3s ease';
-                    counter.style.transform = 'scale(1.1)';
-                    setTimeout(() => {
-                        counter.style.transform = 'scale(1)';
-                    }, 300);
-                }
-            }
-        }
+        <div class="reveal d2 faq-box">
+          <button class="faq-btn">
+            <span>Apakah panduannya detail atau cuma gambaran umum?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body"><div class="faq-body-inner">Ebook ini mencakup penjelasan yang cukup detail untuk setiap tahapan — mulai dari dokumen, akomodasi, transportasi, hingga tata cara ibadah. Cukup untuk memberikan gambaran jelas sebagai panduan awal.</div></div>
+        </div>
 
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        <div class="reveal d3 faq-box">
+          <button class="faq-btn">
+            <span>Apakah bahasanya mudah dipahami?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body"><div class="faq-body-inner">Ya, ebook ini menggunakan bahasa Indonesia yang sederhana dan mengalir. Kalau ada istilah penting, selalu disertai penjelasan singkat agar mudah dipahami.</div></div>
+        </div>
 
-        if (!prefersReducedMotion) {
-            setInterval(updateStockCounter, 30000);
-        }
+        <div class="reveal d4 faq-box">
+          <button class="faq-btn">
+            <span>Format ebooknya apa dan bagaimana cara mengaksesnya?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body"><div class="faq-body-inner">Tersedia dalam format PDF yang bisa dibuka di smartphone, tablet, atau laptop. Setelah mengisi form, Anda akan menerima link unduhan dan bisa langsung mulai membaca.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: prefersReducedMotion ? 'auto' : 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  <!-- ===================== CONVERSION BLOCK ===================== -->
+  <section class="bg-dark-section py-24 sm:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="reveal text-center mb-14">
+        <div class="ornament mb-10">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-3xl md:text-[2.1rem] text-soft-white leading-[1.2] tracking-tight mb-5">
+          Mungkin Ini Saatnya Memahami Umroh Mandiri dengan Lebih Tenang
+        </h2>
+        <p class="text-soft-white-muted text-base sm:text-[0.96875rem] max-w-md mx-auto leading-[1.75]">
+          Pelajari langkah-langkahnya secara perlahan melalui panduan yang praktis dan mudah dipahami.
+        </p>
+      </div>
 
-        // ========== HERO SLIDER ==========
-        (function () {
-            const track = document.getElementById('sliderTrack');
-            const slides = track.querySelectorAll('.slide');
-            const prevBtn = document.getElementById('sliderPrev');
-            const nextBtn = document.getElementById('sliderNext');
-            const dots = document.querySelectorAll('#sliderDots .slider-dot');
-            const progress = document.getElementById('sliderProgress');
-            const totalSlides = slides.length;
-            let currentIndex = 0;
-            let autoSlideInterval;
-            const autoSlideDelay = 4000;
+      <!-- Price Card -->
+      <div class="reveal d1 max-w-sm mx-auto">
+        <div class="card-dark text-center py-10 px-8" style="border-color:rgba(201,169,110,0.18) !important;">
+          <p class="text-soft-white-dim text-sm mb-1.5">Harga Normal</p>
+          <p class="text-soft-white-dim text-lg line-through mb-6">Rp 247.000</p>
+          <div class="gold-line mx-auto mb-6"></div>
+          <p class="text-soft-white-muted text-sm mb-2">Harga Hari Ini</p>
+          <p class="text-soft-white text-[2.8rem] sm:text-5xl font-heading font-bold leading-none mb-8">Rp 97.000</p>
+          <a href="#form" class="btn-primary w-full py-4 text-base">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Dapatkan Ebook Sekarang
+          </a>
+          <p class="text-soft-white-dim text-[0.75rem] mt-5 leading-relaxed px-2">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline -mt-0.5 mr-1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Akses instan setelah pengisian data. Data Anda aman dan tidak akan disalahgunakan.
+          </p>
+        </div>
+      </div>
 
-            function goToSlide(index) {
-                if (index < 0) index = totalSlides - 1;
-                if (index >= totalSlides) index = 0;
-                currentIndex = index;
-                if (track) {
-                    track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-                }
-                if (dots && dots.length > 0) {
-                    dots.forEach(d => d.classList.remove('active'));
-                    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
-                }
-                if (progress) {
-                    const pct = ((currentIndex + 1) / totalSlides) * 100;
-                    progress.style.width = pct + '%';
-                }
-            }
+      <div class="reveal d2 text-center mt-8">
+        <a href="#ebook-preview" class="btn-ghost w-full max-w-[280px] mx-auto text-sm py-3">
+          Lihat Detail Ebook
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            function nextSlide() { goToSlide(currentIndex + 1); }
-            function prevSlide() { goToSlide(currentIndex - 1); }
+  <!-- ===================== FORM ===================== -->
+  <section id="form" class="bg-cream-section py-24 sm:py-32">
+    <div class="max-w-md mx-auto px-6">
+      <div class="reveal text-center mb-10">
+        <div class="gold-line mx-auto mb-7"></div>
+        <h2 class="font-heading font-bold text-[1.65rem] sm:text-[1.85rem] text-dark-900 leading-[1.2] tracking-tight mb-3">
+          Isi Data untuk Mendapatkan Ebook
+        </h2>
+        <p class="text-body-muted text-[0.9375rem] leading-[1.7]">
+          Masukkan nama dan nomor WhatsApp Anda.<br class="hidden sm:inline"> Link ebook akan dikirimkan langsung.
+        </p>
+      </div>
 
-            if (nextBtn) nextBtn.addEventListener('click', function () { nextSlide(); resetAutoSlide(); });
-            if (prevBtn) prevBtn.addEventListener('click', function () { prevSlide(); resetAutoSlide(); });
+      <div class="reveal d1 card !p-7 sm:!p-8">
+        <form id="leadForm" class="space-y-5" onsubmit="return handleForm(event)">
+          <div>
+            <label class="block font-heading font-semibold text-dark-900 text-[0.8125rem] mb-2" for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required placeholder="Contoh: Ahmad Fauzi" class="form-input">
+          </div>
+          <div>
+            <label class="block font-heading font-semibold text-dark-900 text-[0.8125rem] mb-2" for="wa">Nomor WhatsApp</label>
+            <input type="tel" id="wa" name="wa" required placeholder="Contoh: 08123456789" class="form-input">
+          </div>
+          <div>
+            <label class="block font-heading font-semibold text-dark-900 text-[0.8125rem] mb-2" for="email">Email <span class="text-body-light font-normal">(opsional)</span></label>
+            <input type="email" id="email" name="email" placeholder="Contoh: nama@email.com" class="form-input">
+          </div>
+          <button type="submit" id="submitBtn" class="btn-primary w-full py-4 text-base mt-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Beli Sekarang
+          </button>
+          <p class="text-center text-body-light text-[0.75rem] leading-relaxed">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inline -mt-0.5 mr-1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Data Anda terlindungi. Kami tidak mengirim spam atau membagikan informasi pribadi Anda.
+          </p>
+        </form>
+        <div id="successMsg" class="hidden text-center py-10">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-5" style="background-color:rgba(34,197,94,0.08) !important;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-dark-900 text-lg mb-2">Terima Kasih</h3>
+          <p class="text-body-muted text-sm leading-relaxed">Data Anda telah kami terima. Silakan cek WhatsApp untuk link pengunduhan ebook.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            dots.forEach(dot => {
-                dot.addEventListener('click', function () {
-                    goToSlide(parseInt(this.dataset.index));
-                    resetAutoSlide();
-                });
-            });
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-dark-section py-12">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <div class="ornament mb-6">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <p class="text-soft-white-dim text-[0.75rem] leading-relaxed mb-3">
+        Ebook ini merupakan panduan informatif tentang konsep perjalanan umroh mandiri.<br>
+        Tidak menggantikan bimbingan dari pembimbing ibadah atau travel resmi.
+      </p>
+      <p class="text-soft-white-dim text-[0.6875rem]">
+        &copy; 2025 — Panduan Umroh Mandiri &amp; Privat. Semua hak dilindungi.
+      </p>
+    </div>
+  </footer>
 
-            function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, autoSlideDelay); }
-            function resetAutoSlide() { clearInterval(autoSlideInterval); startAutoSlide(); }
+</div>
 
-            let touchStartX = 0;
-            const slider = document.getElementById('heroSlider');
+<script>
+  // Scroll reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-            slider.addEventListener('touchstart', function (e) {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
+  // FAQ accordion
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const box = this.closest('.faq-box');
+      const body = this.nextElementSibling;
+      const isOpen = box.classList.contains('open');
+      document.querySelectorAll('.faq-box').forEach(b => {
+        b.classList.remove('open');
+        b.querySelector('.faq-body').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        box.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    });
+  });
 
-            slider.addEventListener('touchend', function (e) {
-                const diff = touchStartX - e.changedTouches[0].screenX;
-                if (Math.abs(diff) > 50) {
-                    if (diff > 0) { nextSlide(); } else { prevSlide(); }
-                    resetAutoSlide();
-                }
-            }, { passive: true });
+  // Form submit
+  function handleForm(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const form = document.getElementById('leadForm');
+    const msg = document.getElementById('successMsg');
+    btn.innerHTML = '<svg class="animate-spin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Memproses...';
+    btn.disabled = true;
+    btn.style.opacity = '0.65';
+    setTimeout(() => {
+      form.classList.add('hidden');
+      msg.classList.remove('hidden');
+    }, 1400);
+    return false;
+  }
 
-            slider.addEventListener('mouseenter', function () { clearInterval(autoSlideInterval); });
-            slider.addEventListener('mouseleave', function () { startAutoSlide(); });
-
-            slider.setAttribute('tabindex', '0');
-            slider.addEventListener('keydown', function (e) {
-                if (e.key === 'ArrowLeft') { prevSlide(); resetAutoSlide(); }
-                if (e.key === 'ArrowRight') { nextSlide(); resetAutoSlide(); }
-            });
-
-            goToSlide(0);
-            startAutoSlide();
-        })();
-
-        // ========== TESTIMONIAL SLIDER (no autoplay) ==========
-        (function () {
-            const sliders = document.querySelectorAll('.testi-slider');
-            sliders.forEach(slider => {
-                const track = slider.querySelector('.slider-track');
-                if (!track) return;
-                const slides = track.querySelectorAll('.slide');
-                const prevBtn = slider.querySelector('.slider-btn.prev');
-                const nextBtn = slider.querySelector('.slider-btn.next');
-                const dots = slider.querySelectorAll('.slider-dot');
-                const progress = slider.querySelector('.slider-progress');
-                const totalSlides = slides.length;
-                if (totalSlides === 0) return;
-                let currentIndex = 0;
-
-                function goToSlide(index) {
-                    if (index < 0) index = totalSlides - 1;
-                    if (index >= totalSlides) index = 0;
-                    currentIndex = index;
-                    track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-                    dots.forEach(d => d.classList.remove('active'));
-                    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
-                    if (progress) {
-                        const pct = ((currentIndex + 1) / totalSlides) * 100;
-                        progress.style.width = pct + '%';
-                    }
-                }
-
-                function nextSlide() { goToSlide(currentIndex + 1); }
-                function prevSlide() { goToSlide(currentIndex - 1); }
-
-                // Only navigate when user interacts (click/touch). No automatic interval restart.
-                if (nextBtn) nextBtn.addEventListener('click', function () { nextSlide(); });
-                if (prevBtn) prevBtn.addEventListener('click', function () { prevSlide(); });
-
-                dots.forEach(dot => {
-                    dot.addEventListener('click', function () {
-                        goToSlide(parseInt(this.dataset.index));
-                    });
-                });
-
-                let touchStartX = 0;
-
-                slider.addEventListener('touchstart', function (e) {
-                    touchStartX = e.changedTouches[0].screenX;
-                }, { passive: true });
-
-                slider.addEventListener('touchend', function (e) {
-                    const diff = touchStartX - e.changedTouches[0].screenX;
-                    if (Math.abs(diff) > 50) {
-                        if (diff > 0) { nextSlide(); } else { prevSlide(); }
-                    }
-                }, { passive: true });
-
-                // Don't auto-start; only go to initial slide.
-                goToSlide(0);
-            });
-        })();
-    </script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      const t = document.querySelector(this.getAttribute('href'));
+      if (t) {
+        const y = t.getBoundingClientRect().top + window.pageYOffset - 16;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
 </body>
-
 </html>
